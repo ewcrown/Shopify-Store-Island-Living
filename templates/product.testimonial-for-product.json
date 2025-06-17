@@ -1,0 +1,394 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 36,
+        "mobile_height": 16
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_NRD3hn": {
+          "type": "breadcrumb",
+          "settings": {
+            "text_style": "body",
+            "show_divider": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "large",
+            "show_badges": false,
+            "sale_badge_basis": "auto"
+          }
+        },
+        "inventory_status_rLbggQ": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-1"
+          }
+        },
+        "ef4b4765-8acb-4230-99fe-edee4cc49fd7": {
+          "type": "custom_data",
+          "settings": {
+            "holder_id": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": false,
+            "swatches_source": "file",
+            "swatch_type": "round",
+            "enable_swatch_cross": true,
+            "enable_swatch_unavailable_click": false,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "53c301cb-3275-4301-9ab1-4e3725bdd7b7": {
+          "type": "shopify://apps/amp-back-in-stock/blocks/app-block/bfa6a8c4-24e2-411a-9396-e35031b33f34",
+          "settings": {
+            "caption": "Notify When Available",
+            "font_size": 14,
+            "color": "#ffffff",
+            "background_color": "#000000",
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "classes": "button button--full-width",
+            "style": "text-decoration:none"
+          }
+        },
+        "c6ff5803-090d-4f12-90a7-ecd63447d3ca": {
+          "type": "shopify://apps/wishlist-hero/blocks/custom-product-button/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "settings": {
+            "displayButtonMode": "~",
+            "contentAlignment": "center",
+            "buttonAlignment": "center",
+            "buttonFullwidth": true,
+            "removeBoxShadowAndBorder": false,
+            "horizontalPadding": 20,
+            "iconTopOffset": 0,
+            "addedCssClassNames": "",
+            "addedContainerStyles": ""
+          }
+        },
+        "29e0c4f3-e2ed-4cbd-a404-8e3cafc438a5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "box",
+            "heading": "Features",
+            "content": "<p>{{ product.metafields.custom.features | metafield_tag }}</p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "a741b572-77d6-42f2-a70b-354ce7dfa6f9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "ruler",
+            "heading": "Dimensions",
+            "content": "<p>{{ product.metafields.custom.dimensions | metafield_tag }}</p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "collapsible_tab-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "washing",
+            "heading": "Handling and Care",
+            "content": "<p>{{ product.metafields.custom.handling_and_care | metafield_tag }}</p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "related_buttons_WMm4TG": {
+          "type": "related_buttons",
+          "disabled": true,
+          "settings": {
+            "show_icons": true
+          }
+        },
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "heading": "Returns",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "page": "",
+            "custom_liquid": "",
+            "keep_open": false
+          }
+        },
+        "sticky_cart": {
+          "type": "sticky_cart",
+          "settings": {
+            "show_quantity_selector": false
+          }
+        },
+        "09f4a8ae-3941-4178-ba5e-3c49e14b1f10": {
+          "type": "pickup_avail",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "breadcrumb_NRD3hn",
+        "title",
+        "rating",
+        "price",
+        "inventory_status_rLbggQ",
+        "ef4b4765-8acb-4230-99fe-edee4cc49fd7",
+        "variant_picker",
+        "buy_buttons",
+        "53c301cb-3275-4301-9ab1-4e3725bdd7b7",
+        "c6ff5803-090d-4f12-90a7-ecd63447d3ca",
+        "29e0c4f3-e2ed-4cbd-a404-8e3cafc438a5",
+        "a741b572-77d6-42f2-a70b-354ce7dfa6f9",
+        "collapsible_tab-0",
+        "related_buttons_WMm4TG",
+        "collapsible_tab-1",
+        "sticky_cart",
+        "09f4a8ae-3941-4178-ba5e-3c49e14b1f10"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "media_size": "medium",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "adapt",
+        "show_thumbnails": true,
+        "hide_variants": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_ratio": "adapt",
+        "show_mobile_thumbnails": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "e53c635a-5fbc-48ac-8c6e-acfb1106cf4d": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 40,
+        "mobile_height": 28
+      }
+    },
+    "34b32d11-9bb8-4c6d-bf0f-c1290e2ac114": {
+      "type": "custom-product-description",
+      "settings": {}
+    },
+    "6f064789-5d7e-4d55-9ea2-de5c565eb01f": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 40,
+        "mobile_height": 28
+      }
+    },
+    "scrolling-promotion": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "announcement-0": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "Free Delivery*",
+            "text_size": 16,
+            "link": "https://the-good-brand-store.myshopify.com/policies/shipping-policy"
+          }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "small",
+            "custom_icon": "",
+            "text": "Easy 14 Day Returns",
+            "text_size": 16,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-0",
+        "announcement-1"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 2.5,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "colors_icon": "#f1ff34",
+        "colors_text": "#212326",
+        "colors_background": "#f2f2f2",
+        "gradient_background": "",
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
+    },
+    "guarantees": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee-0": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Free Delivery",
+            "title_size": "h4",
+            "text": "<p><a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">For Orders Over $80*</a></p>"
+          }
+        },
+        "guarantee-1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "recycle",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Sustainable",
+            "title_size": "h4",
+            "text": "<p>We prefer eco-friendly and sustainable materials.</p>"
+          }
+        },
+        "guarantee-2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "recycle",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "14 Day Returns",
+            "title_size": "h4",
+            "text": "<p><a href=\"https://www.islandliving.sg/pages/returns-refunds-policy\" target=\"_blank\" title=\"https://www.islandliving.sg/pages/returns-refunds-policy\">Exchange or return eligible items within 14 days.</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee-0",
+        "guarantee-1",
+        "guarantee-2"
+      ],
+      "settings": {
+        "layout": "default",
+        "column_alignment": "center",
+        "horizontal_content": false,
+        "full_width": true,
+        "show_divider": true,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_list_limit": 4,
+        "show_divider": false,
+        "heading": "You may also like",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "show_divider": false,
+        "heading": "Recently Viewed",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "empty-space",
+    "main",
+    "e53c635a-5fbc-48ac-8c6e-acfb1106cf4d",
+    "34b32d11-9bb8-4c6d-bf0f-c1290e2ac114",
+    "6f064789-5d7e-4d55-9ea2-de5c565eb01f",
+    "scrolling-promotion",
+    "guarantees",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

@@ -1,0 +1,591 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_wiJdQP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AjybtE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Showroom",
+            "heading_size": "h1",
+            "heading_tag": "h1"
+          }
+        },
+        "text_qxFQ6W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover over 500 products styled in real-life settings. </p><p>Open Tuesday to Saturday, 11am to 5pm.</p><p></p><p></p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_AjybtE",
+        "text_qxFQ6W"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 40
+      }
+    },
+    "video_hero_rzPJhG": {
+      "type": "video-hero",
+      "blocks": {
+        "heading_WGME3R": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Video hero",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_eL4UVx": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_JUWpU7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WGME3R",
+        "text_eL4UVx",
+        "button_JUWpU7"
+      ],
+      "settings": {
+        "video": "shopify://files/videos/IMG_7376.MOV",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "550px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": false,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_FF9rKq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7RUkg6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Locate Us",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_xDLTWM": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>8 Kaki Bukit Avenue 1 #06-03/04 Mapletree Industrial Trust, S417941</h2><h2><strong>Open:</strong> 9am-5pm, Tues - Sat</h2>",
+            "text_size": "typeset3",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_7RUkg6",
+        "text_xDLTWM"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_L8gYiK": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_eaiqUb": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_3ttGqh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_HJettn": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_eaiqUb",
+        "text_3ttGqh",
+        "button_HJettn"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Showroom_banner.png",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "adapt",
+        "show_text_box": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "200px",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_dn6RL3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jriDC8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-12-20_at_4.35.40_PM.png",
+            "title": "Free Consultation",
+            "title_size": "h2",
+            "text": "<p>Create your dream space with personalized styling advice from our showroom team.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_wDTTed": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-12-20_at_4.35.45_PM.png",
+            "title": "Location",
+            "title_size": "h2",
+            "text": "<p>8 Kaki Bukit Avenue 1 #06-04<br/>Mapletree Industrial Trust, S417941</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_HH8gWB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-12-20_at_4.35.48_PM.png",
+            "title": "Opening Hours",
+            "title_size": "h2",
+            "text": "<p>11AM - 5PM<br/>Tuesday - Saturday<br/>Closed on Sunday, Monday & <br/>Public Holidays.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_gcxfLY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-12-20_at_4.35.51_PM.png",
+            "title": "Parking",
+            "title_size": "h2",
+            "text": "<p>Parking is available at Mapletree <br/>Industrial Carpark, near block 8.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_8NHNN3": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG_7407.heic",
+            "title": "Opening Hours",
+            "title_size": "h3",
+            "text": "<p>9AM - 5PM </p><p>Tuesday - Saturday</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_xYDfCc": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-12-20_at_12.11.08_PM.png",
+            "title": "Location",
+            "title_size": "h3",
+            "text": "<p>8 Kaki Bukit Avenue 1 #06-03/04</p><p>Mapletree Industrial Trust, S417941</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_Bqh9Nc": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Location",
+            "title_size": "h3",
+            "text": "<p>8 Kaki Bukit Avenue 1 #06-03/04</p><p>Mapletree Industrial Trust, S417941</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "column_4Wg737": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/DSC_3450_f1aed1dc-95f0-4607-a2b7-b0af6e6460dc.jpg",
+            "title": "Free Consultation",
+            "title_size": "h3",
+            "text": "<p>Create the perfect space with expert guidance from our stylists.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_jriDC8",
+        "column_wDTTed",
+        "column_HH8gWB",
+        "column_gcxfLY",
+        "column_8NHNN3",
+        "column_xYDfCc",
+        "column_Bqh9Nc",
+        "column_4Wg737"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image_ratio": "square",
+        "image_position": "center center",
+        "text_alignment": "center",
+        "show_divider": false,
+        "image_width": "half",
+        "columns_desktop": 4,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h3",
+        "mobile_text_alignment": "center",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 64
+      }
+    },
+    "gallery_wLAp9V": {
+      "type": "gallery",
+      "blocks": {
+        "image_VdgerA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/showroom_4.heic",
+            "image_position": "80% 50%",
+            "subheading": "Bed & Decor",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_7LHpWw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_7428.heic",
+            "image_position": "center center",
+            "subheading": "Baby Furniture",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_VUDe4e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_7432.heic",
+            "image_position": "center center",
+            "subheading": "Dining Furniture",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_DfyAUk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_7438.heic",
+            "image_position": "center center",
+            "subheading": "Pots & Planters",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h3",
+            "link": "",
+            "text_box_position": "bottom-left"
+          }
+        }
+      },
+      "block_order": [
+        "image_VdgerA",
+        "image_7LHpWw",
+        "image_VUDe4e",
+        "image_DfyAUk"
+      ],
+      "settings": {
+        "per_row": 4,
+        "spacing_images": 2,
+        "image_height": 300,
+        "apply_overlay": true,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "Browse In-Store",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h5",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "mobile_image_height": 200,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_tKQ69j": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MqXA6d": {
+          "type": "heading",
+          "settings": {
+            "heading": "How To Get There",
+            "heading_size": "h1",
+            "heading_tag": "h3"
+          }
+        },
+        "text_V8zWqg": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>By MRT</strong>: </p><p>Take Downtown Line (DT29), alight at Kaki Bukit Mrt,  Exit A, near Blk 660. </p><p>Walk straight 8 mins towards Mapletree Industrial Building, Blk 8.</p><p><strong>By BUS</strong>: </p><p><strong>Bus Stop (72051) - Kaki Bt Ind Est:</strong></p><p>Buses Available: Bus 5, 15, 15A, 58, 58B, 59, 87</p><p><strong>Bus Stop (71091) - Blk 637:</strong></p><p>Buses Available: Bus 5, 8, 15, 15A, 22, 25, 45, 51. 55, 59, 61, 63, 65. 93, 94, 854</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_MqXA6d",
+        "text_V8zWqg"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "image_banner_LazQMG": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qX8wKw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ready to explore?",
+            "heading_size": "h1",
+            "heading_tag": "h4"
+          }
+        },
+        "subheading_7hecfL": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Get a closer look at our newest arrivals.",
+            "subheading_size": "h5",
+            "secondary_color": false
+          }
+        },
+        "button_LBKJD9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Locate Us Now",
+            "button_link": "https://www.google.com/maps/dir/1.3369344,103.9007744/islandliving/@1.3354746,103.8979621,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x31da1932a112f24b:0x1c9604eb181ffd67!2m2!1d103.9049547!2d1.3327999?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+            "button_size": "large",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_qX8wKw",
+        "subheading_7hecfL",
+        "button_LBKJD9"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMG_7407.heic",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "450px",
+        "show_text_box": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "300px",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 72
+      }
+    },
+    "newsletter_kg8kCi": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_g8mWDy": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Join Our Newsletter & Enjoy $20 Off Your First Purchase!",
+            "heading_tag": "h6"
+          }
+        },
+        "paragraph_kJEcbi": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<h2>Join Our List & Get $20 Off Your First Purchase!</h2>"
+          }
+        },
+        "email_form_agfiGR": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_g8mWDy",
+        "paragraph_kJEcbi",
+        "email_form_agfiGR"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "full_width": true,
+        "show_divider": true,
+        "colors_text": "#ffffff",
+        "colors_border": "#ffffff",
+        "colors_background": "#93918e",
+        "gradient_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "rich_text_wiJdQP",
+    "video_hero_rzPJhG",
+    "main",
+    "rich_text_FF9rKq",
+    "image_banner_L8gYiK",
+    "multicolumn_dn6RL3",
+    "gallery_wLAp9V",
+    "rich_text_tKQ69j",
+    "image_banner_LazQMG",
+    "newsletter_kg8kCi"
+  ]
+}

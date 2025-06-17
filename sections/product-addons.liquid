@@ -1,0 +1,114 @@
+
+
+{% assign addon_entry = product.metafields.custom.addon_products.value %}
+{% assign variants = addon_entry.addon_products.value %}
+
+{% if variants != blank %}
+  <div class="addon-products-section">
+    <h3 class="addon-products-title">Add a lampshade?</h3>
+
+    <div class="addon-products-grid">
+      {% for variant in variants %}
+        <div class="addon-product-card">
+          <div class="addon-product-image">
+            <img src="{{ variant.featured_image | image_url: width: 400 }}" alt="{{ variant.title }}" />
+          </div>
+          <div class="addon-product-info">
+            <p class="addon-product-title">{{ variant.product.title }} {{ variant.title }}</p>
+            <p class="addon-product-price">{{ variant.price | money }}</p>
+            <button
+              type="button"
+              class="addon-add-button"
+              data-variant-id="{{ variant.id }}">
+              Add
+            </button>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('.addon-add-button').forEach(button => {
+        button.addEventListener('click', function () {
+          const variantId = this.dataset.variantId;
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              items: [{ id: variantId, quantity: 1 }]
+            })
+          })
+          .then(() => window.location.href = '/cart')
+          .catch(err => console.error('Add-on error:', err));
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .addon-products-section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .addon-products-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .addon-products-grid {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+
+    .addon-product-card {
+      flex: 0 0 auto;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 180px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .addon-product-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .addon-product-title {
+      font-size: 0.95rem;
+      margin-top: 0.75rem;
+    }
+
+    .addon-product-price {
+      font-size: 0.9rem;
+      margin: 0.25rem 0 0.75rem;
+      color: #333;
+    }
+
+    .addon-add-button {
+      background: #000;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .addon-add-button:hover {
+      background: #333;
+    }
+  </style>
+{% endif %}
+

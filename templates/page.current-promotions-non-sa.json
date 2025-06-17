@@ -1,0 +1,500 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "image_banner_FnbY8n": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Dh3jQh": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_xqrBz6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_7AJngA": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Dh3jQh",
+        "text_xqrBz6",
+        "button_7AJngA"
+      ],
+      "settings": {
+        "image_2": "shopify://shop_images/promotions_page_2_1e60a290-c250-40eb-a14a-f683fe440ef3.png",
+        "image_position": "center center",
+        "text_box_position": "middle-left",
+        "text_alignment": "center",
+        "image_ratio": "400px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_aQaTEM": {
+      "type": "collage",
+      "blocks": {
+        "video_igApAp": {
+          "type": "video",
+          "settings": {
+            "enable_video_looping": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "heading": "Video heading"
+          }
+        },
+        "product_xXFV6b": {
+          "type": "product",
+          "settings": {
+            "product": "kennedy-arm-chair-black",
+            "second_image": false,
+            "enable_quick_view": true
+          }
+        },
+        "collection_kicLbQ": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_igApAp",
+        "product_xXFV6b",
+        "collection_kicLbQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "apply_overlay": true,
+        "show_divider": false,
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_gLnEP3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NKif6f": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ready_for_raya_option_2_square_ce33a0d8-1b6a-4dfc-8784-5626e05f7957.png",
+            "title": "10% OFF DINING SETS",
+            "title_size": "h3",
+            "text": "<p>Upgrade your dining room. Save 10% when you mix and match a dining table with your choice of chairs. </p><p>Discount automatically applied at check out.</p>",
+            "button_label": "Shop Dining Sets",
+            "button_link": "https://the-good-brand-store.myshopify.com/a/bundles/bundle-discount-9bd2",
+            "button_style_secondary": false
+          }
+        },
+        "column_WNkbzE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/welcome20.png",
+            "title": "WELCOME Coupon Code",
+            "title_size": "h3",
+            "text": "<p>First-time shopper? Here's a little treat! Enjoy a $20 off your first purchase with us — use code: <strong>WELCOME20</strong> at checkout.</p><p>Min spend of $100 applies.<br/></p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        },
+        "column_C6nmhd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ATOME.png",
+            "title": "Heveya: Buy 2, Save More!",
+            "title_size": "h3",
+            "text": "<p><strong>Face towel: </strong>Buy 2 for $88 (Save $8)<strong><br/></strong></p><p><strong>Hand towel</strong>: Buy 2 for $118 (Save $18)<br/></p><p><strong>Bath towel (Small):</strong> Buy 2 for $188 (Save $28)<br/></p><p><strong>Bath towel (Large):</strong> Buy 2 for $258 (Save $38)</p>",
+            "button_label": "SHOP SALE",
+            "button_link": "shopify://collections/sale-kitchen-dining",
+            "button_style_secondary": false
+          }
+        },
+        "column_GKxD7w": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Big_Spender.png",
+            "title": "Big Spender: 10% Off $4000 Spend*",
+            "title_size": "h3",
+            "text": "<p>For single purchase totalling $4000 or more, excluding assembly and shipping charges, delivered to a single delivery address.</p><p>Discount applies automatically at checkout.</p>",
+            "button_label": "Learn More",
+            "button_link": "shopify://pages/terms-conditions-spend-4-000-or-more-and-save-10",
+            "button_style_secondary": false
+          }
+        },
+        "column_XKh3ft": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Promotions_page_banner_-_950_x600px_3.png",
+            "title": "Atome Payment Discounts",
+            "title_size": "h3",
+            "text": "<p>Select Atome as a payment mode to get Atome monthly voucher discounts. </p><p>Download Atome app &gt; Search for 'Island Living' &gt; Claim vouchers under 'Deals & Rewards'  </p>",
+            "button_label": "LEARN MORE",
+            "button_link": "https://www.atome.sg/en-sg/paylater-merchants/island-living",
+            "button_style_secondary": false
+          }
+        },
+        "column_LxKNxp": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Ready_for_raya_option_1_square_7.png",
+            "title": "Up to 40% Clearance Sale",
+            "title_size": "h3",
+            "text": "<p>Shop our sale items and grab a bargain in time for Raya celebrations! Prices as shown.</p>",
+            "button_label": "Shop All Sale",
+            "button_link": "shopify://collections/sale",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column_NKif6f",
+        "column_WNkbzE",
+        "column_C6nmhd",
+        "column_GKxD7w",
+        "column_XKh3ft",
+        "column_LxKNxp"
+      ],
+      "settings": {
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "center",
+        "show_divider": false,
+        "image_width": "full",
+        "columns_desktop": 3,
+        "heading": "Promotions",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "mobile_text_alignment": "center",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_wwjaTH": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "dining-tables",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "show_divider": false,
+        "heading": "Shop Dining Tables",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_wgwwen": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "dining-chairs",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "show_divider": false,
+        "heading": "Shop Dining Chairs",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "bundle_products_XEDQ9H": {
+      "type": "bundle-products",
+      "blocks": {
+        "product_7UNYUB": {
+          "type": "product",
+          "settings": {
+            "product": "nordika-dining-table",
+            "image_ratio": "adapt",
+            "show_vendor": false,
+            "show_quick_buy": false,
+            "enable_quick_view": true,
+            "color": "#000000",
+            "horizontal": 30,
+            "vertical": 40
+          }
+        },
+        "product_W3idUF": {
+          "type": "product",
+          "settings": {
+            "product": "kennedy-arm-chair-black",
+            "image_ratio": "adapt",
+            "show_vendor": false,
+            "show_quick_buy": false,
+            "enable_quick_view": true,
+            "color": "#000000",
+            "horizontal": 70,
+            "vertical": 45
+          }
+        },
+        "product_BKFYrM": {
+          "type": "product",
+          "settings": {
+            "product": "kennedy-arm-chair-black",
+            "image_ratio": "adapt",
+            "show_vendor": false,
+            "show_quick_buy": false,
+            "enable_quick_view": true,
+            "color": "#000000",
+            "horizontal": 45,
+            "vertical": 65
+          }
+        }
+      },
+      "block_order": [
+        "product_7UNYUB",
+        "product_W3idUF",
+        "product_BKFYrM"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Nordika_Dining_Table_Maelstrom_Kennedy_Basket_c3bb63a9-409a-4984-9fd3-6827b1dc89f0.jpg",
+        "layout": "image_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "full_width": false,
+        "show_divider": false,
+        "subheading": "GET READY FOR RAYA",
+        "subheading_size": "h5",
+        "heading": "Bundle these best-sellers and save 10%",
+        "heading_size": "h2",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "scrolling_promotion_fFVyJd": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "announcement_ecagdA": {
+          "type": "announcement",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "Fast &amp; Free* delivery",
+            "text_size": 20,
+            "link": ""
+          }
+        },
+        "announcement_Ymqkdy": {
+          "type": "announcement",
+          "settings": {
+            "icon": "star",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "Over 30,000 happy customers",
+            "text_size": 20,
+            "link": ""
+          }
+        },
+        "announcement_GUmKB3": {
+          "type": "announcement",
+          "settings": {
+            "icon": "shop",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "Easy 14 day returns",
+            "text_size": 20,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_ecagdA",
+        "announcement_Ymqkdy",
+        "announcement_GUmKB3"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 2.5,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1708926087e32780f2": {
+      "type": "apps",
+      "blocks": {
+        "bundler_custom_bundle_TzRUTn": {
+          "type": "shopify://apps/bundler/blocks/custom-bundle/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {
+            "shortcode": ""
+          }
+        }
+      },
+      "block_order": [
+        "bundler_custom_bundle_TzRUTn"
+      ],
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_VcmakY": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_mTKLya": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Save 10% on Dining Sets Promotion",
+            "row_content": "<ol><li><strong>Promotion Period</strong>: This offer is valid from Wednesday, 28 February at 00:01 AM to Wednesday, 10 April at 11:59 PM (GMT+8).</li><li><strong>Eligibility</strong>: The \"Save 10% on Dining Sets\" promotion is open to all customers of Island Living. Participants must be aged 18 years or over.</li><li><strong>Offer Details</strong>: Customers are entitled to a 10% discount on the total purchase price when they buy one (1) dining table and one (1) or more dining chairs in a single transaction.</li><li><strong>How to Participate</strong>: Simply purchase a dining table and 1 or more dining chairs to automatically receive 10% discount off your purchase when you add to cart.</li><li><strong>Exclusions</strong>: This offer cannot be combined with any other promotions, discounts or coupon codes. Discount is not applicable to previous purchases, gift card purchases, shipping charges, or taxes.</li><li><strong>Returns/Exchanges</strong>: Items purchased under this promotion can be returned or exchanged according to Island Living's standard return policy, except that the discount will be proportionally applied to any returned or exchanged items. </li><li><strong>Inventory</strong>: Offer is subject to availability and while stocks last. Island Living reserves the right to substitute any product with another of equivalent value without giving notice.</li><li><strong>Modification of Terms</strong>: Island Living reserves the right to cancel, modify or extend the promotion at any time without prior notice due to circumstances beyond its control.</li><li><strong>Liability</strong>: Island Living shall not be liable for any loss or damage arising from the participants' participation in the promotion, or from the participants' acceptance and/or use of the promotional discount.</li><li><strong>Privacy</strong>: By participating in this promotion, customers agree to the collection and use of their personal information in accordance with Island Living’s privacy policy.</li><li><strong>Governing Law</strong>: These terms and conditions are governed by the laws of the jurisdiction in which Island Living operates, without regard to its conflict of law principles.</li><li><strong>Inquiries</strong>: For any questions or concerns regarding the promotion or these terms and conditions, please contact Island Living: info@islandliving.sg</li></ol><p>By participating in the \"Mix, Match & Save\" promotion, customers are deemed to have read, understood, and agreed to be bound by these terms and conditions.</p>",
+            "page": "returns-refunds-policy"
+          }
+        },
+        "collapsible_row_k8dTEy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Returns and Refunds Policy",
+            "row_content": "",
+            "page": "returns-refunds-policy"
+          }
+        },
+        "collapsible_row_T9fmcL": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_xg8wUn": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_mTKLya",
+        "collapsible_row_k8dTEy",
+        "collapsible_row_T9fmcL",
+        "collapsible_row_xg8wUn"
+      ],
+      "disabled": true,
+      "settings": {
+        "open_first_collapsible_row": false,
+        "narrow": false,
+        "show_divider": false,
+        "heading": "READY FOR RAYA: SALE TERMS & CONDITIONS",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_FnbY8n",
+    "collage_aQaTEM",
+    "multicolumn_gLnEP3",
+    "featured_collection_wwjaTH",
+    "featured_collection_wgwwen",
+    "bundle_products_XEDQ9H",
+    "scrolling_promotion_fFVyJd",
+    "1708926087e32780f2",
+    "collapsible_content_VcmakY"
+  ]
+}

@@ -1,0 +1,149 @@
+{% if section.settings.seo_title != blank %}
+  <div class="page-width" style="margin-bottom: 2rem;">
+    <h2 style="font-weight: 600; font-size: 2rem; margin-bottom: 1rem; color: #333;">
+      {{ section.settings.seo_title }}
+    </h2>
+  </div>
+{% endif %}
+
+{% if section.settings.seo_content != blank %}
+  <div class="page-width rte faq-section" style="font-size: 1.7rem; line-height: 1.8; color: #333; margin-bottom: 3rem;">
+      <style>
+      .faq-section ul,
+      .faq-section ol,
+      .faq-section li {
+        font-size: 1.7rem !important;
+        line-height: 1.8 !important;
+        color: #333 !important;
+      }
+    </style>  
+  {{ section.settings.seo_content }}
+  </div>
+{% endif %}
+
+{% for block in section.blocks %}
+  {% if block.type == 'faq_block' %}
+    {% if collection.metafields.custom.accordion_faqs_seo != blank %}
+      <style>
+        .faq-accordion {
+          margin-top: 3rem;
+        }
+        .faq-accordion h3 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          color: #333;
+        }
+        .faq-item {
+          border-bottom: 1px solid #e0e0e0;
+          padding: 1rem 0;
+        }
+        .faq-item summary {
+          font-weight: 600;
+          font-size: 1.5rem;
+          cursor: pointer;
+          list-style: none;
+          position: relative;
+        }
+        .faq-item summary::marker {
+          display: none;
+        }
+        .faq-item summary::after {
+          content: "+";
+          position: absolute;
+          right: 0;
+          font-weight: bold;
+        }
+        .faq-item[open] summary::after {
+          content: "–";
+        }
+        .faq-answer {
+          margin-top: 0.5rem;
+          font-size: 1.4rem;
+          color: #555;
+        }
+      </style>
+
+      <div class="faq-accordion page-width">
+        <h3>Frequently Asked Questions</h3>
+
+        {% if block.settings.faq_intro != blank %}
+          <div style="margin-bottom: 1.5rem;">{{ block.settings.faq_intro }}</div>
+        {% endif %}
+
+        <div class="faq-list">
+          {% for faq in collection.metafields.custom.accordion_faqs_seo.value %}
+            {% if faq.question != blank and faq.answer != blank %}
+              <details class="faq-item">
+                <summary class="faq-question">{{ faq.question.value }}</summary>
+                <div class="faq-answer">{{ faq.answer.value }}</div>
+              </details>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- JSON-LD FAQ Schema -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {% for faq in collection.metafields.custom.accordion_faqs_seo.value %}
+              {
+                "@type": "Question",
+                "name": {{ faq.question.value | json }},
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": {{ faq.answer.value | strip_html | json }}
+                }
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }
+      </script>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Bottom SEO Content",
+  "class": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "seo_title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "seo_content",
+      "label": "Description",
+      "info": "Connect a dynamic source like SEO Rich Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_block",
+      "name": "FAQs Accordion",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "faq_intro",
+          "label": "Optional FAQ Introduction"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bottom SEO Content",
+      "blocks": []
+    }
+  ],
+  "enabled_on": {
+    "templates": ["collection"]
+  }
+}
+{% endschema %}

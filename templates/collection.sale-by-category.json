@@ -1,0 +1,267 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "ebeba111-7b76-4389-b251-c23ed6d3ca94": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20290201649430__ebeba111-7b76-4389-b251-c23ed6d3ca94-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Sale by Category",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--20290201649430__ebeba111-7b76-4389-b251-c23ed6d3ca94-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enjoy extra savings on already reduced sale items if you spend a minimum of $500:</p><p>Spend $500 <strong>Save $58</strong> | Spend $1,000 <strong>Save $158</strong> | Spend $1,500 <strong>Save $258</strong></p><p>Additional discount will automatically be applied at checkout. Ends Sunday, 13 Aug, 11.59pm.</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        },
+        "template--20290201649430__ebeba111-7b76-4389-b251-c23ed6d3ca94-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20290201649430__ebeba111-7b76-4389-b251-c23ed6d3ca94-heading-1",
+        "template--20290201649430__ebeba111-7b76-4389-b251-c23ed6d3ca94-text-1",
+        "template--20290201649430__ebeba111-7b76-4389-b251-c23ed6d3ca94-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 4,
+        "padding_bottom": 0
+      }
+    },
+    "subs": {
+      "type": "main-collection-subs",
+      "settings": {
+        "menu": "main-menu",
+        "per_row": 5,
+        "columns_mobile": "2",
+        "horizontal_on_mobile": false,
+        "grid_image": "collection",
+        "image_ratio": "square",
+        "image_position": "center center",
+        "apply_overlay": true,
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "5f215911-9146-48be-adaf-e1ba681a24ba": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17698622800150__5f215911-9146-48be-adaf-e1ba681a24ba-16811010290e5864c1-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Get ready for Raya sale on now!",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--17698622800150__5f215911-9146-48be-adaf-e1ba681a24ba-16811010290e5864c1-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Ends Sat 23 Dec, 11.59pm.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        },
+        "button_CBKiwg": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop hari raya promos",
+            "button_link": "shopify://pages/ready-for-raya-2024",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17698622800150__5f215911-9146-48be-adaf-e1ba681a24ba-16811010290e5864c1-0",
+        "template--17698622800150__5f215911-9146-48be-adaf-e1ba681a24ba-16811010290e5864c1-1",
+        "button_CBKiwg"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "heading_size": "h1",
+        "show_description": true,
+        "show_image": true,
+        "apply_overlay": true,
+        "image_position": "center center",
+        "image_ratio": "550px",
+        "text_alignment": "center",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "show_text_below": false,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "8b209c88-cc93-4141-b862-34782c24a7bd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share information about your brand with your customers.</p>"
+          }
+        },
+        "6d3ff14f-747b-42e9-9994-1168e6327133": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>test</p>"
+          }
+        },
+        "e1bd75f7-730b-4ae0-b941-bd47ab1c625c": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/National_day_sale_1138_x_750_px.png",
+            "image_width": 300,
+            "link": "https://www.islandliving.sg/pages/national-day-spend-and-save"
+          }
+        }
+      },
+      "block_order": [
+        "8b209c88-cc93-4141-b862-34782c24a7bd",
+        "6d3ff14f-747b-42e9-9994-1168e6327133",
+        "e1bd75f7-730b-4ae0-b941-bd47ab1c625c"
+      ],
+      "custom_css": [
+        ".card-article-info {font-size: 12px !important;}"
+      ],
+      "settings": {
+        "products_per_row": 4,
+        "rows_per_page": 6,
+        "columns_mobile": "2",
+        "pagination": "paginated",
+        "low_inventory_count": 10,
+        "low_inventory_text": "Low Stock",
+        "preorder_text": "Pre-order now",
+        "in_stock_text": "In Stock Now",
+        "in_stock_icon": "none",
+        "enable_sticky_facet": true,
+        "enable_sorting": true,
+        "enable_viewing": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_filtering_color_swatches": false,
+        "filtering_color_swatches_add_label": false,
+        "filtering_max_items": 6,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": false,
+        "enable_quick_view": true,
+        "enable_color_swatches": false,
+        "enable_countdown": true,
+        "padding_top": 0,
+        "padding_bottom": 92
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "show_divider": true,
+        "heading": "Recently viewed",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": false,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "0f5bdc81-06cc-464f-b720-c61bc83bbf90": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<br />\n<h3>{{ collection.metafields.custom.seo_title }}</h3>\n<br />\n{{ collection.metafields.custom.seo_content }}\n<br />\n<br />",
+        "full_width": false,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "ebeba111-7b76-4389-b251-c23ed6d3ca94",
+    "subs",
+    "5f215911-9146-48be-adaf-e1ba681a24ba",
+    "banner",
+    "product-grid",
+    "recently-viewed",
+    "0f5bdc81-06cc-464f-b720-c61bc83bbf90"
+  ]
+}

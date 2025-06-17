@@ -1,0 +1,133 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "featured_collection_XjqKep": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "show_divider": false,
+        "heading": "Featured collections",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_r3eN68": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_86NP3M": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rattan-furniture",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_BeGjcy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "furniture",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_pKc3LE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "decor-accessories",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_UMWrUn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "office-home-organisation",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_CwpCfC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kitchen-dining",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_KfrKLe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bed-bath-body",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_MkJK8z": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sale",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_86NP3M",
+        "featured_collection_BeGjcy",
+        "featured_collection_pKc3LE",
+        "featured_collection_UMWrUn",
+        "featured_collection_CwpCfC",
+        "featured_collection_KfrKLe",
+        "featured_collection_MkJK8z"
+      ],
+      "settings": {
+        "show_view_all": false,
+        "show_divider": false,
+        "heading": "Shop by Collection",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collection_XjqKep",
+    "collection_list_r3eN68"
+  ]
+}

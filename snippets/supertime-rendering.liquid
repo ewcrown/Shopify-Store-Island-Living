@@ -1,0 +1,137 @@
+{%- comment -%}
+  MARK:- Conditionally render supertime app.
+
+  Pre-req:
+      - {{ cart.total_weight }} renders weight in grams, not kgs. Multiply by 1000 to convert to grams or for dispalying, use {{ cart.total_weight | weight_with_unit }} instead.
+      - Enable Supertime app to use a custom selector and use .show-supertime class to force render app on a specific point.
+
+  Condition 1
+  [HIDE]
+  - condition: cart only contains pre-order content
+  - description: We will contact you to arrange a delivery date once shipment for pre-ordered items has arrived at our warehouse.
+
+  Condition 2
+  [HIDE]
+  - condition: cart has preorder and instock items, and instock items have a weight of less than 1kg
+  - description: We will deliver your in-stock items first and contact you to arrange a delivery date once shipment for pre-ordered items has arrived at our warehouse.
+
+  Condition 3
+  [SHOW]
+  - condition: total order weight > 10kg AND no `pre-order` and items in stock
+  - description: Please select your preferred delivery date and time slot. Don't see your available date or have a special request? Leave us a note in the "Special Instructions" box and check out without selecting a date
+
+  Condition 4
+  [SHOW]
+  - condition: total order weight > 10kg AND `pre-order` and items in stock
+  - description: We will deliver your in-stock items first. Please select your preferred delivery date and time slot below. For pre-ordered items, we will contact you to arrange a delivery date once the shipment has arrived at our warehouse. Leave us a note in the "Special Instructions" box and check out without selecting a date
+
+  Condition 5
+  [HIDE]
+  - condition: total order weight < 10kg
+  - description: We will deliver your in-stock items within 3-5 working days.
+    [[[ If on preorder ]]]If you have a pre-ordered item, we will contact you to arrance a delivery date once shipment arrives at our warehouse. Please click the checkout button to continue.
+{%- endcomment -%}
+
+{% assign preOrder = false %}
+{% assign inStock = false %}
+{% assign inStockWeight = 0 %}
+
+{% for item in cart.items %}
+  {% assign lineItemPreorder = false %}
+  {% for props in item.properties %}
+    {% assign prip = props | downcase %}
+    {% if prip contains 'pre-order' %}
+      {% assign lineItemPreorder = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if item.product.tags contains 'pre-order' or lineItemPreorder == true and item.variant.inventory_quantity < 1 %}
+    {% assign preOrder = true %}
+  {% else %}
+    {% assign inStock = true %}
+    {% assign inStockWeight = inStockWeight | plus: item.variant.weight %}
+  {% endif %}
+{% endfor %}
+
+<style>
+  .super-text-alignment {
+    text-align: right;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .super-text-alignment {
+      width: 100%;
+      text-align: left;
+    }
+  }
+</style>
+
+{% if preOrder == false and inStock == false %}
+  {%- comment -%}
+    Cart empty. Don't render Supertime
+  {%- endcomment -%}
+
+{% elsif preOrder == true and inStock == true and inStockWeight < 1000 %}
+  <div class="">
+    <p class="super-text-alignment">
+      We will deliver your in-stock items first and contact you to arrange a delivery date once shipment for pre-ordered
+      items has arrived at our warehouse.
+    </p>
+  </div>
+
+{% elsif preOrder == true and inStock == false %}
+  <div class="">
+    <p class="super-text-alignment">
+      We will contact you to arrange a delivery date once shipment for pre-ordered items has arrived at our warehouse.
+    </p>
+  </div>
+
+{% elsif cart.total_weight > 9999 and preOrder == false and inStock == true %}
+  <div class="show-supertime"></div>
+  <div class="">
+    <p class="super-text-alignment">
+      Please select your preferred delivery date and time slot.<br>
+      <br>
+      Please note in-stock furniture items will be delivered on the date you have selected. <br>
+      Non-furniture items will be delivered within 3-5 working days.<br>
+      <br>
+      Don't see your available date or have a special request? Leave us a note in the "Special Instructions" box and
+      check out without a date.
+    </p>
+  </div>
+
+{% elsif cart.total_weight > 9999 and preOrder == true and inStock == true %}
+  <div class="show-supertime"></div>
+  <div class="">
+    <p class="super-text-alignment">
+      We will deliver your in-stock items first.<br>
+      Please select your preferred delivery date and time slot.<br>
+      <br>
+      Please note in-stock furniture items will be delivered on the date you have selected. <br>
+      Non-furniture items will be delivered within 3-5 working days.<br>
+      <br>
+      For pre-ordered items, we will contact you to arrange a delivery date once shipment has arrived at our warehouse.
+      <br>
+      <br>
+      Don't see your available date or have a special request? <br>
+      Leave us a note in the "Special Instructions" box and check out without a date
+    </p>
+  </div>
+
+{% elsif cart.total_weight < 10000 %}
+  <div class="">
+    <p class="super-text-alignment">
+      We will deliver your in-stock items within 3-5 working days.<br>
+      {% if preOrder %}
+        <br>
+        If you have a pre-ordered item, we will contact you to arrange a delivery date once shipment arrives at our
+        warehouse. Please click the checkout button to continue.
+      {% endif %}
+    </p>
+  </div>
+
+{% else %}
+  {%- comment -%}
+    No rendering here.
+  {%- endcomment -%}
+{% endif %}

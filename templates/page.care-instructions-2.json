@@ -1,0 +1,386 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "62670d1c-79af-4d2a-a17d-0263dc592315": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19696091988246__62670d1c-79af-4d2a-a17d-0263dc592315-168837389809a1dfeb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.metafields.custom.care_page_title.value }}",
+            "heading_size": "h1",
+            "heading_tag": "h1"
+          }
+        },
+        "template--19696091988246__62670d1c-79af-4d2a-a17d-0263dc592315-168837389809a1dfeb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ page.metafields.custom.care_page_description | metafield_tag }}</p>",
+            "text_size": "typeset2",
+            "secondary_color": true
+          }
+        },
+        "template--19696091988246__62670d1c-79af-4d2a-a17d-0263dc592315-168837389809a1dfeb-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19696091988246__62670d1c-79af-4d2a-a17d-0263dc592315-168837389809a1dfeb-0",
+        "template--19696091988246__62670d1c-79af-4d2a-a17d-0263dc592315-168837389809a1dfeb-1",
+        "template--19696091988246__62670d1c-79af-4d2a-a17d-0263dc592315-168837389809a1dfeb-2"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.page_image.value }}",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "image_mobile": "{{ page.metafields.custom.page_image.value }}",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_aJPqDX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xEAemB": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_kYpkKK": {
+          "type": "text",
+          "settings": {
+            "text": "{{ page.metafields.custom.care_instructions | metafield_tag }}",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        },
+        "button_Lh7tqQ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xEAemB",
+        "text_kYpkKK",
+        "button_Lh7tqQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "full_width": true,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "5db4ac33-5c27-4939-9a24-491f08fbc6a6": {
+      "type": "featured-product",
+      "blocks": {
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-0": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "title_tag": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-1": {
+          "type": "rating",
+          "settings": {}
+        },
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-2": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#feeeee"
+          }
+        },
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-3": {
+          "type": "price",
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true,
+            "sale_badge_basis": "auto"
+          }
+        },
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-4": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatches_source": "file",
+            "swatch_type": "round",
+            "enable_swatch_cross": true,
+            "enable_swatch_unavailable_click": false,
+            "size_chart": ""
+          }
+        },
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-6": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-7": {
+          "type": "read_more",
+          "settings": {
+            "show_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-0",
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-1",
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-2",
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-3",
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-4",
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-5",
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-6",
+        "template--19696091988246__5db4ac33-5c27-4939-9a24-491f08fbc6a6-16883736341ff90130-7"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "mimosa-outdoor-teak-dining-table",
+        "layout": "media_first",
+        "full_width": false,
+        "show_divider": false,
+        "hide_variants": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "image_ratio": "adapt_first",
+        "image_position": "center center",
+        "enable_layered_images": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_btdghW": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_q8TBLB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "{{ page.metafields.custom.single_collection.value }}",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_jDfnjt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "{{ page.metafields.custom.single_collection_2.value }}",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_ie8qhn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "{{ page.metafields.custom.single_collection_3.value }}",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_q8TBLB",
+        "featured_collection_jDfnjt",
+        "featured_collection_ie8qhn"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "show_view_all": false,
+        "show_divider": false,
+        "heading": "Browse our range",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d3227ed7-01ca-43a4-80ef-588143f6822e": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "outdoor-furniture-1",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "show_divider": false,
+        "heading": "Explore our Outdoor Furniture Collection",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a38af480-f704-4dd0-9fcd-079bb5e0d41d": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19696091988246__a38af480-f704-4dd0-9fcd-079bb5e0d41d-168837361090469ad3-0": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "Give customers details about the slide image or content on the template.",
+            "text_size": "typeset",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "template--19696091988246__a38af480-f704-4dd0-9fcd-079bb5e0d41d-168837361090469ad3-1": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "Give customers details about the slide image or content on the template.",
+            "text_size": "typeset",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19696091988246__a38af480-f704-4dd0-9fcd-079bb5e0d41d-168837361090469ad3-0",
+        "template--19696091988246__a38af480-f704-4dd0-9fcd-079bb5e0d41d-168837361090469ad3-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "slideshow_type": "modern",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "full_width": true,
+        "image_behavior": "none",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "300px",
+        "show_text_below": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "colors_overlay": "#ffffff",
+        "colors_overlay_opacity": 92,
+        "colors_navigation_text": "#ffffff",
+        "colors_navigation_background": "#1a1b18",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "62670d1c-79af-4d2a-a17d-0263dc592315",
+    "rich_text_aJPqDX",
+    "main",
+    "5db4ac33-5c27-4939-9a24-491f08fbc6a6",
+    "collection_list_btdghW",
+    "d3227ed7-01ca-43a4-80ef-588143f6822e",
+    "a38af480-f704-4dd0-9fcd-079bb5e0d41d"
+  ]
+}

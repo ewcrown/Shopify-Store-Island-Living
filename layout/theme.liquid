@@ -1,0 +1,423 @@
+{%- assign text_direction = 'localization.text_direction_trigger' | t | downcase -%}
+<!doctype html>
+<html
+  class="no-js"
+  lang="{{ request.locale.iso_code }}"
+  {%- if text_direction == 'rtl' %}
+    dir="rtl"
+  {% endif -%}
+>
+  <head>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WNTWXP4L');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    </title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {% render 'meta-tags' %}
+
+    <script src="{{ 'vendor-v4.js' | asset_url | split: '?' | first }}" defer="defer"></script>
+    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+
+    {{ content_for_header }}
+
+    {%- liquid
+      render 'css-variables'
+      echo 'base.css' | asset_url | stylesheet_tag: preload: true
+
+      if text_direction == 'rtl'
+        echo 'rtl.css' | asset_url | stylesheet_tag
+      endif
+    -%}
+
+    {%- unless settings.type_body_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+    {%- unless settings.type_header_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+
+    {%- if settings.predictive_search_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+    {%- if settings.quick_view_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-quick-view.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+    {%- if settings.color_swatches_enabled -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-color-swatches.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+    {%- endif -%}
+    {%- if linklists['gift-wrapping'].links != blank
+      and linklists['gift-wrapping'].links.first.type == 'product_link'
+    -%}
+      <link
+        rel="stylesheet"
+        href="{{ 'component-gift-wrapping.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'"
+      >
+      <noscript>{{ 'component-gift-wrapping.css' | asset_url | stylesheet_tag }}</noscript>
+    {%- endif -%}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
+
+    {% comment %} MARK:- W3 fast loader {% endcomment %}
+    {{ 'api.jquery.js' | shopify_asset_url | script_tag }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    {{ 'https://productoptions.w3apps.co/js/options.js' | script_tag }}
+    <script type="text/javascript">
+      setTimeout(function () {
+        var w3$ = $.noConflict(true);
+        w3productOptionsJS(w3$);
+      }, 0);
+    </script>
+    {% comment %} W3 fast loader END {% endcomment %}
+
+    {% comment %} MARK:- Microsoft Clarity {% endcomment %}
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'gwvz2jaf5o');
+    </script>
+    {% comment %} Microsoft Clarity END {% endcomment %}
+        <link rel="preload" href="{{ 'design-pack-styles.css' | asset_url }}" as="style">
+      {{ 'design-pack-styles.css' | asset_url | stylesheet_tag }} 
+      </head>
+
+
+  <body
+    class="template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %}"
+    {%- if settings.image_zoom_effect_enabled %}
+      data-animate-image
+    {% endif -%}
+    {%- if settings.image_loading_bar_enabled %}
+      data-lazy-image
+    {% endif -%}
+    {%- if settings.heading_capitalize %}
+      data-heading-capitalize
+    {% endif -%}
+    {%- if settings.heading_center %}
+      data-heading-center
+    {% endif -%}
+    {%- if settings.price_superscript %}
+      data-price-superscript
+    {% endif -%}
+    {%- if settings.button_corner_radius > 0 %}
+      data-button-round
+    {% endif -%}
+  >
+    
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNTWXP4L"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    {% comment %} MARK:- Scripts for utility{% endcomment %}
+    <script>
+      {% comment %} Function to wait for an element to come to existence. {% endcomment %}
+      function waitForElm(selector) {
+        return new Promise(resolve => {
+            if (document.querySelector(selector)) {
+                return resolve(document.querySelector(selector));
+            }
+
+            const observer = new MutationObserver(mutations => {
+                if (document.querySelector(selector)) {
+                    resolve(document.querySelector(selector));
+                    observer.disconnect();
+                }
+            });
+
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        });
+      }
+
+      {% comment %} Function to wait for an object to be defined {% endcomment %}
+      function waitForObj(obj, prop) {
+        return new Promise(resolve => {
+          const checkInterval = setInterval(() => {
+            if (obj[prop]) {
+              clearInterval(checkInterval);
+              resolve(obj[prop]);
+            }
+          }, 500);
+        });
+      }
+
+
+      {% comment %} Add delay artificially {% endcomment %}
+      const delay = ms => new Promise(res => setTimeout(res, ms));
+    </script>
+    {% comment %} Scripts END {% endcomment %}
+    <a class="skip-to-content-link button button--small visually-hidden" href="#MainContent">
+      {{ 'accessibility.skip_to_text' | t }}
+    </a>
+
+    {% render 'transition-cover' %}
+
+    <div class="transition-body">
+      {% sections 'header-group' %}
+
+      <div class="transition-content">
+        <main id="MainContent" class="content-for-layout focus-none shopify-section" role="main" tabindex="-1">
+          {{ content_for_layout }}
+        </main>
+
+        {% sections 'footer-group' %}
+      </div>
+    </div>
+
+    {% sections 'overlay-group' %}
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+      <symbol id="icon-cart" fill="none" viewbox="0 0 18 19">
+        <path d="M3.09333 5.87954L16.2853 5.87945V5.87945C16.3948 5.8795 16.4836 5.96831 16.4836 6.07785V11.4909C16.4836 11.974 16.1363 12.389 15.6603 12.4714C11.3279 13.2209 9.49656 13.2033 5.25251 13.9258C4.68216 14.0229 4.14294 13.6285 4.0774 13.0537C3.77443 10.3963 2.99795 3.58502 2.88887 2.62142C2.75288 1.42015 0.905376 1.51528 0.283581 1.51478" stroke="currentColor"/>
+        <path d="M13.3143 16.8554C13.3143 17.6005 13.9183 18.2045 14.6634 18.2045C15.4085 18.2045 16.0125 17.6005 16.0125 16.8554C16.0125 16.1104 15.4085 15.5063 14.6634 15.5063C13.9183 15.5063 13.3143 16.1104 13.3143 16.8554Z" fill="currentColor"/>
+        <path d="M3.72831 16.8554C3.72831 17.6005 4.33233 18.2045 5.07741 18.2045C5.8225 18.2045 6.42651 17.6005 6.42651 16.8554C6.42651 16.1104 5.8225 15.5063 5.07741 15.5063C4.33233 15.5063 3.72831 16.1104 3.72831 16.8554Z" fill="currentColor"/>
+      </symbol>
+    </svg>
+
+    <script>
+      
+      window.routes = {
+        root_url: '{{ routes.root_url }}',
+        cart_url: '{{ routes.cart_url }}',
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}',
+        search_url: '{{ routes.search_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
+      };
+
+      window.cartStrings = {
+        error: `{{ 'sections.cart.cart_error' | t }}`,
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
+      };
+
+      window.variantStrings = {
+        addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+        soldOut: `{{ 'products.product.sold_out' | t }}`,
+        unavailable: `{{ 'products.product.unavailable' | t }}`,
+        preOrder: `{{ 'products.product.pre_order' | t }}`
+      };
+
+      window.accessibilityStrings = {
+        imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
+        shareSuccess: `{{ 'general.share.success_message' | t }}`
+      }
+
+      window.dateStrings = {
+        d: `{{ 'general.date.d' | t }}`,
+        day: `{{ 'general.date.day' | t }}`,
+        days: `{{ 'general.date.days' | t }}`,
+        hour: `{{ 'general.date.hour' | t }}`,
+        hours: `{{ 'general.date.hours' | t }}`,
+        minute: `{{ 'general.date.minute' | t }}`,
+        minutes: `{{ 'general.date.minutes' | t }}`,
+        second: `{{ 'general.date.second' | t }}`,
+        seconds: `{{ 'general.date.seconds' | t }}`
+      };
+
+      window.shopSettings = {
+        moneyFormat: {{ shop.money_format | json }},
+        isoCode: {{ cart.currency.iso_code | json }},
+        cartDrawer: {{ settings.cart_drawer_enabled }},
+        currencyCode: {{ settings.currency_code_enabled }}
+      };
+
+      (function() {
+        // Fixed: Largest Contentful Paint image was lazily loaded
+        const first_image = document.querySelector('#MainContent .shopify-section .media img');
+        if (first_image) first_image.setAttribute('loading', 'auto');
+      })();
+    </script>
+
+    {%- if settings.image_loading_bar_enabled %}
+      <script src="{{ 'lazyimage.js' | asset_url }}" async></script>
+    {% endif -%}
+    {%- if settings.predictive_search_enabled -%}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+    {%- if settings.quick_view_enabled -%}
+      <script src="{{ 'quick-view.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+    {%- if settings.color_swatches_enabled -%}
+      <script src="{{ 'color-swatches.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+    {%- if linklists['gift-wrapping'].links != blank
+      and linklists['gift-wrapping'].links.first.type == 'product_link'
+    -%}
+      <script src="{{ 'gift-wrapping.js' | asset_url }}" defer="defer"></script>
+    {%- endif -%}
+
+    {% comment %} MARK:- Dot Digital CartInsight: Start {% endcomment %}
+    {%- if content_for_header contains 'https:\/\/r3-t.trackedlink.net\/shopify\/wbt.js' and customer.email %}
+      {% assign track_non_subscribed = true %}
+      {% if customer.accepts_marketing or track_non_subscribed %}
+        <script>
+          window.dmPtId = function () {
+            window.dmPt('identify', '{{ customer.email }}');
+          };
+        </script>
+      {% endif %}
+    {% endif %}
+    {% comment %} Dot Digital CartInsight: End {% endcomment %}
+
+    {% comment %} MARK:- Supertime Scripts  {% endcomment %}
+    {% if order.attributes %}
+      <script>
+        SupertimeOrder = {
+          deliveryMethod: "{{ order.attributes["Supertime Delivery Method"] }}",
+          deliveryDate: "{{ order.attributes["Supertime Delivery Date"] }}",
+          timeslot: "{{ order.attributes["Supertime Timeslot"] }}",
+          deliveryDetailsText: "Order Pick-up and Local Delivery Instructions",
+          additionalInstructionsText: "We will be in touch to confirm your availability.",
+          deliveryMethodText: "Delivery Zone:"
+        };
+      </script>
+      <script async src="{{ "https://getsupertime.com/supertime.js?shop=" | append: shop.permanent_domain }}"></script>
+    {% endif %}
+    {% comment %} Supertime Scripts END  {% endcomment %}
+
+    {% comment %} Dotdigital CartInsight: Start {% endcomment %}
+    {%- if content_for_header contains 'https:\/\/r3-t.trackedlink.net\/shopify\/wbt.js' and customer.email %}
+      {% assign track_non_subscribed = true %}
+      {% if customer.accepts_marketing or track_non_subscribed %}
+        <script>
+          window.dmPtId = function () {
+            window.dmPt('identify', '{{ customer.email }}');
+          };
+        </script>
+      {% endif %}
+    {% endif -%}
+    {% comment %} Dotdigital CartInsight: End {% endcomment %}
+   {% render 'spurit_po2_theme_snippet' %}
+     {% comment %}     
+    <script>
+      Spurit.globalOnLoad = function () {
+        Spurit.global.atc.onBeforeEventPrevented((event, target) => {
+          target.hasAttribute('data-pre-order-atc-button');
+        });
+        Spurit.global.atc.onBefore((event, target, lineItems, submitMode, next) => {
+          next(Spurit.global.constants.ATC.SUBMIT_MODE_AJAX, lineItems);
+        });
+        Spurit.global.atc.onAfter((event, target, lineItems, submitMode) => {
+          if (submitMode !== Spurit.global.constants.ATC.SUBMIT_MODE_AJAX) {
+            return;
+          }
+          // your code here to add ons
+
+          //end
+          //your code here to open AJAX
+          const miniDrawer = document.querySelector('cart-drawer');
+          miniDrawer.openMenuDrawer();
+        });
+      };
+    </script>
+  {% endcomment %}
+    {% comment %} MARK:- Custom Floating Icon {% endcomment %}
+    {% render 'custom-floating-icon' %}
+  {% if product.template_suffix == 'with-addons' %}
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof window.addonVariants === 'undefined' || !Array.isArray(window.addonVariants)) return;
+
+      const form = document.querySelector('form[action^="/cart/add"]');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        const selectedAddon = form.querySelector('input[name="properties[Add-on]"]:checked');
+        if (!selectedAddon || selectedAddon.value.includes('Base Only')) return;
+
+        const addonTitle = selectedAddon.value.split('(')[0].replace('With', '').trim();
+        const addon = window.addonVariants.find(v => v.title.trim() === addonTitle);
+        if (!addon || !addon.id) return;
+
+        // Delay to allow main product to process first
+        setTimeout(() => {
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: addon.id, quantity: 1 })
+          })
+          .then(res => res.json())
+          .then(data => {
+            console.log('Addon added:', data);
+            if (typeof window.Spurit !== 'undefined' && typeof Spurit.global.atc !== 'undefined') {
+              const cartDrawer = document.querySelector('cart-drawer');
+              if (cartDrawer && typeof cartDrawer.openMenuDrawer === 'function') {
+                cartDrawer.openMenuDrawer();
+              }
+            }
+          })
+          .catch(err => console.error('Addon failed:', err));
+        }, 500);
+      });
+    });
+  </script>
+{% endif %}
+
+        </body>
+</html>

@@ -1,0 +1,127 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 36,
+        "mobile_height": 16
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_NRD3hn": {
+          "type": "breadcrumb",
+          "settings": {
+            "text_style": "body",
+            "show_divider": false
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "large",
+            "show_badges": false,
+            "sale_badge_basis": "auto"
+          }
+        },
+        "inventory_status_rLbggQ": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-1"
+          }
+        },
+        "ef4b4765-8acb-4230-99fe-edee4cc49fd7": {
+          "type": "custom_data",
+          "settings": {
+            "holder_id": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": false,
+            "swatches_source": "file",
+            "swatch_type": "round",
+            "enable_swatch_cross": true,
+            "enable_swatch_unavailable_click": false,
+            "size_chart": ""
+          }
+        },
+        "addon_product_cards_F3VEkh": {
+          "type": "addon_product_cards",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_NRD3hn",
+        "title",
+        "rating",
+        "price",
+        "inventory_status_rLbggQ",
+        "ef4b4765-8acb-4230-99fe-edee4cc49fd7",
+        "variant_picker",
+        "addon_product_cards_F3VEkh",
+        "buy_buttons"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "media_size": "medium",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "adapt",
+        "show_thumbnails": true,
+        "hide_variants": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false,
+        "mobile_image_ratio": "adapt",
+        "show_mobile_thumbnails": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "addon-product-cards": {
+      "type": "addon-product-cards",
+      "settings": {}
+    }
+  },
+  "order": [
+    "empty-space",
+    "main",
+    "addon-product-cards"
+  ]
+}

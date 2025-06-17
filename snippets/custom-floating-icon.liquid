@@ -1,0 +1,40 @@
+<a href="/pages/contact-us" class="floating_link">
+  <div class="floating_holder_div">
+    {% render 'icon', icon: 'custom-support-icon' %}
+  </div>
+</a>
+
+<style>
+  .floating_link {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #bd9040;
+    padding: 6px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .floating_holder_div {
+    display: flex;
+    align-items: center;
+  }
+
+  .floating_contact_text {
+    color: black;
+    padding-left: 4px;
+    font-size: 14px;
+  }
+
+  /* Hide mobile-only elements on desktop */
+  @media (min-width: 769px) {
+    .floating_link {
+      display: none;
+    }
+  }
+</style>

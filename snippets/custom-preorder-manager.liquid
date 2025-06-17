@@ -1,0 +1,97 @@
+{% comment %} MARK:- Render Amai only in specific pages to maintain functionality, and especially not in any of the product pages. {% endcomment %}
+    {% if template.name == 'cart' or template.name contains 'collection' or template.name contains 'search' %}
+      {% render 'spurit_po2_theme_snippet' %}
+    {% else %}
+    {% assign currentProductTags = product.tags | downcase %}
+    {% if currentProductTags contains 'pre-order' %}
+      <script>
+        {% comment %} if a product is on preorder, update the button to say "Pre order" instead of "Add to cart" {% endcomment %}
+        waitForElm('.product-form__submit.button.button--full-width.w3-options-add-to-cart').then((elm)=> {
+          elm.innerHTML = "Pre-Order";
+        })
+      </script>
+    {% endif %}
+      <script>
+        async function pullDataFromAmai() {
+          //Fetch directly from the API
+          const res = await (
+            await fetch('https://amaicdn.com/preorder2/store/a7aaf6149dcf3639e31add5b0a663abb.js')
+          ).text();
+
+          //Make `res` available as a script
+          const scriptElement = document.createElement('script');
+          scriptElement.innerHTML = res;
+          document.body.appendChild(scriptElement);
+        }
+        
+        pullDataFromAmai();
+
+
+        window.onload = function(){
+          waitForObj(window, 'Spurit').then(() => {
+            updateCartButton({{ product.selected_or_first_available_variant.id }});
+          });
+          var oldHref = document.location.href;
+          {% comment %} window.onload = function () { {% endcomment %}
+            var bodyList = document.querySelector('body');
+            var observer = new MutationObserver(function (mutations) {
+              mutations.forEach(function (mutation) {
+                if (oldHref !== document.location.href) {
+                  oldHref = document.location.href;
+
+                  updateText();
+                }
+              });
+            });
+            observer.observe(bodyList, {
+              childList: true,
+              subtree: true,
+            });
+
+          {% comment %} This runs whenever the URL updates. {% endcomment %}
+        function updateText(){
+          const params = new Proxy(new URLSearchParams(window.location.search), {
+            get: (searchParams, prop) => searchParams.get(prop),
+          });
+          updateCartButton(params.variant);
+        }
+        // Create the variants object
+        var variants = {
+          {% for variant in product.variants %}
+          {{ variant.id }}: {{ variant.inventory_quantity }},
+          {% endfor %}
+        };
+
+        async function updateCartButton(variantID){
+          try{
+            //If a product has multiple variants, it'll have an entry in variants, else in products.
+            // If the variant exists in the Spurit object and its quantity is 0 or negative 
+            if (typeof window.Spurit.Preorder2.settings.variants[variantID] !== "undefined"){
+                if (variants[variantID] <= 0 && window.Spurit.Preorder2.settings.variants[variantID].is_active){
+                console.log("Variant found and it's on pre-order");
+                await delay(1000);
+                waitForElm('.product-form__submit.button.button--full-width.w3-options-add-to-cart').then((elm)=> {
+                    elm.innerHTML = "Pre-Order";
+                })
+                } else {
+                console.log("Variant found but it's not on pre-order");
+                waitForElm('.product-form__submit.button.button--full-width.w3-options-add-to-cart').then((elm)=> {
+                    elm.innerHTML = "Add To Cart";
+                })
+                }
+            } else {
+                console.log("Product got no variants")
+                if (window.Spurit.Preorder2.settings.products[{{ product.id }}].is_active){
+                    console.log("Product on preorder")
+                }
+            }
+          }
+          catch(e){
+            console.error(e.message, e);
+          }
+        }
+      };
+
+      </script>
+    {% endif %}
+    {% comment %} Render.... END {% endcomment %}

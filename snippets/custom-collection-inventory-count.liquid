@@ -1,0 +1,26 @@
+{% comment %} MARK:- In collection list, show text based on what the stock value is {% endcomment %}
+
+{% assign low_inventory_count = low_inventory_count | times: 1 %}
+<div style="margin-top: 0px; margin-bottom: -3px;">
+  {% assign lowInventoryUp = low_inventory_count | plus: 1 %}
+  {%- if product.selected_or_first_available_variant.inventory_quantity > low_inventory_count -%}
+    {% if in_stock_icon != 'none' %}
+      <div style="width: 15px; height: 15px; display: inline-block;">
+        {% render 'icon', icon: 'truck' %}
+      </div>
+    {% endif %}
+    <span class="caption-large light">
+      {{ in_stock_text -}}
+    </span>
+  {%- elsif product.selected_or_first_available_variant.inventory_quantity < lowInventoryUp
+    and product.selected_or_first_available_variant.available
+  -%}
+    <span class="caption-large light">
+      {% if product.selected_or_first_available_variant.inventory_quantity < 1 %}
+        {{ preorder_text }}
+      {% else %}
+        {{ low_inventory_text }}
+      {% endif %}
+    </span>
+  {%- endif -%}
+</div>

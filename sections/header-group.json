@@ -1,0 +1,199 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header-group.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_BzfTQf": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Shop now, store for later—<strong>90 days of free storage, on us! </strong>Plus free delivery for orders over $80.</p>",
+            "text_on_mobile": "<p>Enjoy 90 days free storage & free delivery for orders over $80!</p>",
+            "text_size": 13,
+            "link": "shopify://pages/extended-free-storage-period"
+          }
+        },
+        "announcement_GfhXL4": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Spend $80 or more and get free delivery!</p>",
+            "text_on_mobile": "<p>Spend $80 or more and get free delivery!</p>",
+            "text_size": 13,
+            "link": "shopify://pages/extended-free-storage-period"
+          }
+        },
+        "announcement_bh4pW4": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Save big when you buy now pay later with Atome! Ends 30 September.</p>",
+            "text_on_mobile": "<p>Buy now, pay later and SAVE with Atome! Ends 30 September.</p>",
+            "text_size": 16,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_BzfTQf",
+        "announcement_GfhXL4",
+        "announcement_bh4pW4"
+      ],
+      "settings": {
+        "only_homepage": false,
+        "layout": "default",
+        "mobile_layout": "carousel",
+        "autorotate": true,
+        "autorotate_speed": 7,
+        "show_navigation": true,
+        "direction": "left",
+        "speed": 2.5,
+        "colors_text": "#ffffff",
+        "colors_background": "#30322d",
+        "gradient_background": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "ae4b2872-7cf7-4ee9-8673-ac4bd21c4714": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "Furniture",
+            "narrow": false,
+            "show_menu_image": false,
+            "promo_image_1": "shopify://shop_images/Hey_Big_Spender.png",
+            "promo_image_ratio_1": "square",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "shopify://pages/terms-conditions-spend-4-000-or-more-and-save-10",
+            "promo_image_2": "shopify://shop_images/Havana_bed_bench_java_throw_cushions_java_sunshine_3.jpg",
+            "promo_image_ratio_2": "square",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "Room Inspiration",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": "shopify://pages/room-inspiration"
+          }
+        },
+        "mega_menu_ByH4mY": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "SALE",
+            "narrow": true,
+            "show_menu_image": true,
+            "promo_image_1": "shopify://shop_images/Promo_collection_block_2.png",
+            "promo_image_ratio_1": "adapt",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "Shop online",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "shopify://collections/warehouse-sale-2024",
+            "promo_image_ratio_2": "adapt",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        },
+        "mega_menu_bR6bDB": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "FURNITURE",
+            "narrow": true,
+            "show_menu_image": true,
+            "promo_image_1": "shopify://shop_images/Promo_collection_block_2.png",
+            "promo_image_ratio_1": "adapt",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "Warehouse Sale",
+            "promo_text_1": "Shop now",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "shopify://collections/warehouse-sale-2024",
+            "promo_image_ratio_2": "adapt",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        },
+        "mega_menu_azDRnt": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "Decor",
+            "narrow": true,
+            "show_menu_image": true,
+            "promo_image_ratio_1": "adapt",
+            "promo_image_position_1": "center center",
+            "promo_heading_1": "",
+            "promo_text_1": "",
+            "promo_overlay_content_1": false,
+            "promo_link_1": "",
+            "promo_image_ratio_2": "adapt",
+            "promo_image_position_2": "center center",
+            "promo_heading_2": "",
+            "promo_text_2": "",
+            "promo_overlay_content_2": false,
+            "promo_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "ae4b2872-7cf7-4ee9-8673-ac4bd21c4714",
+        "mega_menu_ByH4mY",
+        "mega_menu_bR6bDB",
+        "mega_menu_azDRnt"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/IL_Logo_H_Grey_PNG_7a81366b-9482-4b7e-b28a-1a9543904fca.png",
+        "mobile_logo": "shopify://shop_images/IL_Logo_V_Grey_PNG_421721b2-651d-46b3-9b41-53b5ab370186.png",
+        "logo_height": 16,
+        "mobile_logo_height": 30,
+        "logo_position": "top-center",
+        "menu": "main-menu",
+        "enable_dropdown_menu": true,
+        "show_line_separator": true,
+        "cart_icon": "cart",
+        "icon_weight": "1.7",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "enable_sticky_header": true,
+        "show_sticky_header_scroll_up": true,
+        "enable_transparent_header": false,
+        "enable_transparent_header_collection": false,
+        "enable_transparent_header_custom": "",
+        "show_transparent_header_border": false,
+        "transparent_text_color": "#ffffff",
+        "mobile_logo_position": "center",
+        "colors_text": "#282828",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

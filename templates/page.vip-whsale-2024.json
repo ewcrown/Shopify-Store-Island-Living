@@ -1,0 +1,130 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "7c579246-4391-4d2b-b32a-2169ff59c6fb": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Early Access Warehouse Sale: Thursday, 7 November",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Up to 80% off clearance items | 15% off everything else!*</strong></p><p>Introducing our biggest Year End Sale! Join us on <strong>Thursday, 7 November</strong> to get a first look at our incredible deals, all before the crowds arrive – a perfect opportunity be amongst the first to shop our bargains in a relaxed setting.</p><p><strong>When: </strong>Thursday, 7 November</p><p><strong>Time: </strong>11am-7pm</p><p><strong>Where: </strong>8 Kaki Bukit Avenue, #06-03/04, Singapore 417941</p><p>If you can't make it in person, we have a selection of clearance items available online from 12.01am, Thursday 7 November.</p><p>We hope to see you there!</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP ONLINE",
+            "button_link": "shopify://collections/early-access-warehouse-clearance-sale-2024",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-heading-1",
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-text-1",
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-button-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/WH_Sale_VIP_3b4f362f-21b5-4974-b980-73b733d3ea52.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "adapt",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "narrow": false,
+        "padding_top": 4,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_NXF4XM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3HYhYY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Terms & Conditions",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_xGnpJk": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1. Early Access Sale Duration</strong></p><p>The Early Access VIP Sale will be held both in person and online. There will be a limited range of clearance items available online.</p><ul><li>In person: There will be an in-person VIP Early Access sale at our combined showroom & warehouse location on Thursday, 7 November, from 11.00am to 7.00pm. It will open to the public on 8-10 November and 15-17 November, from 11.00am to 6.00pm</li></ul><p></p><ul><li>Online: Starts 12.00am on Thursday, 7 November, for a 24-hour period. It will open to public at 12.00am on Friday, 8 November.</li></ul><p><strong>2. Eligibility</strong></p><p>This offer has been sent to our valued VIP customers. You will be eligible to shop if you have received the email.</p><p>The Warehouse Sale will open to members of the public from 8-10 November and 15-17 November, 11am-6pm. Online access will start from 12.01am Friday, 8 November.</p><p><strong>3. Discounts</strong></p><p>Enjoy 15% off regular items sitewide using code \"EARLYACCESS24\" during the early access sale period. Discount cannot be stacked or combined with other discounts or promotions. Limited clearance items up to 80% off are available and no code is required. Prices are as marked, and no additional discounts apply for clearance pieces.</p><p><strong>4. Returns and Exchanges</strong></p><p>Our standard return and exchange policies apply to all purchases during this sale. Clearance items are final sale, there are is returns or exchange on these items. Please refer to our website for details. </p><p><strong>5. Availability</strong></p><p>All items are subject to availability, and we reserve the right to modify or end the sale at any time.</p><p>For any questions or assistance, please contact our customer support team at info@islandliving.sg. </p><p>By participating in this Early Access VIP Sale, you agree to these terms and conditions. Happy shopping!</p><p><strong>For more information:</strong> email <a href=\"mailto:info@islandliving.sg\">info@islandliving.sg</a></p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": "EARLYACCESS24"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3HYhYY",
+        "text_xGnpJk"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": true,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 28,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "7c579246-4391-4d2b-b32a-2169ff59c6fb",
+    "main",
+    "rich_text_NXF4XM"
+  ]
+}

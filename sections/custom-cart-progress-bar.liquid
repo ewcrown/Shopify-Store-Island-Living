@@ -1,0 +1,200 @@
+<style>
+  .progress-meter {
+    list-style: none;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+  .progress-meter .progress-step {
+    position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter .progress-step {
+      display: flex;
+    }
+    .progress-meter .progress-step:last-child label {
+      margin-bottom: 0;
+    }
+  }
+  .progress-meter .progress-step span {
+    text-align: center;
+    width: 12px;
+    height: 12px;
+    background: #b4b4b4;
+    border-radius: 50%;
+    z-index: 10;
+    position: relative;
+    display: block;
+  }
+  .progress-meter .progress-step label {
+    font-size: 16px;
+    color: #9f9f9f;
+    margin-top: 20px;
+    display: block;
+    white-space: nowrap;
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter .progress-step label {
+      margin-top: -2px;
+      margin-bottom: 60px;
+      margin-left: 20px;
+    }
+  }
+  .progress-meter .progress-step:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #f2f2f3;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter .progress-step:after {
+      width: 2px;
+      height: 100%;
+      left: 5px;
+    }
+  }
+  .progress-meter .progress-step:last-child:after {
+    content: '';
+    display: none;
+  }
+  .progress-meter .progress-step:last-child {
+    width: 0;
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter .progress-step:last-child {
+      width: 100%;
+    }
+  }
+  .progress-meter .progress-step.progress-complete span {
+    background: red;
+  }
+  .progress-meter .progress-step.progress-complete label {
+    color: #000;
+  }
+  .progress-meter .progress-step.progress-complete:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #9f9f9f;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter .progress-step.progress-complete:after {
+      width: 2px;
+      height: 100%;
+      left: 5px;
+    }
+  }
+  .progress-meter .progress-step.progress-ongoing span {
+    background: red;
+    border: 1px solid red;
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter .progress-step.progress-ongoing span {
+      margin-left: -2px;
+    }
+  }
+  .progress-meter .progress-step.progress-ongoing label {
+    color: #000;
+    margin-top: 16px;
+  }
+  @media only screen and (max-width: 767px) {
+    .progress-meter .progress-step.progress-ongoing label {
+      margin-top: -5px;
+      margin-bottom: 60px;
+      margin-left: 18px;
+    }
+  }
+</style>
+
+{% assign cart_total = 0 %}
+{% for item in cart.items %}
+  {% assign cart_total = cart_total | plus: item.original_line_price %}
+{% endfor %}
+{% assign cart_total = cart_total | money_without_currency %}
+{% assign cart_total = cart_total | remove: ',' %}
+{% assign cart_total = cart_total | plus: 0 %}
+{% assign discount_thresholds = '500,1000,1500,2500' | split: ',' %}
+{% assign final_discount = '88,188,288,488' | split: ',' %}
+{% assign looper = discount_thresholds.size | minus: 1 %}
+{% assign next_tier_difference = 0 %}
+{% assign next_discount = '' %}
+{% assign max_tier_reached = false %}
+{% for i in (0..looper) %}
+  {% assign current_tier = discount_thresholds[i] | plus: 0 %}
+  {% if cart_total < current_tier %}
+    {% assign next_tier_difference = current_tier | minus: cart_total %}
+    {% assign next_discount = final_discount[i] %}
+    {% break %}
+  {% endif %}
+  {% if forloop.last and cart_total >= current_tier %}
+    {% assign max_tier_reached = true %}
+  {% endif %}
+{% endfor %}
+
+<h3 style="text-align: center;">
+  {% if max_tier_reached %}
+    Congratulations, you've scored huge savings for CNY!
+  {% else %}
+    Spend ${{ next_tier_difference }} more for ${{ next_discount }} off
+  {% endif %}
+</h3>
+
+<ul class="progress-meter">
+  <li class="progress-step {% if cart_total < 500 %}progress-ongoing{% else %}progress-complete{% endif %}">
+    <label></label>
+  </li>
+  {% for i in (0..looper) %}
+    {% assign discount_value = discount_thresholds[i] | plus: 0 %}
+    {% assign discount_label = final_discount[i] | prepend: '$' | append: ' off' %}
+    {% if cart_total >= discount_value %}
+      <li class="progress-step progress-complete">
+        <span></span>
+        <label>{{ discount_label }}</label>
+      </li>
+    {% elsif forloop.first and cart_total < discount_value %}
+      <li class="progress-step progress-ongoing">
+        <span></span>
+        <label>{{ discount_label }}</label>
+      </li>
+    {% else %}
+      <li class="progress-step">
+        <span></span>
+        <label>{{ discount_label }}</label>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% schema %}
+{
+  "name": "Cart Progress Bar",
+  "settings": [],
+  "class": "page-width section--padding",
+  "presets": [
+    {
+      "name": "Cart Progress Bar",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

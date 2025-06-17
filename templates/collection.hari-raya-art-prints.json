@@ -1,0 +1,163 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading_size": "h2",
+        "show_description": false,
+        "show_image": false,
+        "apply_overlay": false,
+        "image_position": "center center",
+        "image_ratio": "adapt",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "show_text_below": false,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_9kVXbD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_nkG7aX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get ready for Raya! Save 10% on the listed price of all art and wall decor. </p><p>Discount automatically applied at check out. Ends 10 April, 11.59pm.</p>",
+            "text_size": "typeset2",
+            "secondary_color": true,
+            "highlight_phrases": "Save 10%"
+          }
+        }
+      },
+      "block_order": [
+        "text_nkG7aX"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "subs": {
+      "type": "main-collection-subs",
+      "settings": {
+        "menu": "main-menu",
+        "per_row": 5,
+        "columns_mobile": "2",
+        "horizontal_on_mobile": false,
+        "grid_image": "collection",
+        "image_ratio": "square",
+        "image_position": "center center",
+        "apply_overlay": true,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+        ".card-article-info {font-size: 12px !important;}"
+      ],
+      "settings": {
+        "products_per_row": 4,
+        "rows_per_page": 6,
+        "columns_mobile": "2",
+        "pagination": "paginated",
+        "enable_sticky_facet": true,
+        "enable_sorting": true,
+        "enable_viewing": true,
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "enable_filtering_color_swatches": false,
+        "filtering_color_swatches_add_label": false,
+        "filtering_max_items": 6,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": false,
+        "enable_quick_view": true,
+        "enable_color_swatches": false,
+        "enable_countdown": true,
+        "padding_top": 0,
+        "padding_bottom": 92
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "show_divider": true,
+        "heading": "Recently viewed",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": false,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "cd9249ef-1278-488a-adff-39e2230c5b5d": {
+      "type": "custom-collection-bottom-seo-fields",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "seo_title": "<p>{{ collection.metafields.custom.seo_title.value }}</p>",
+        "seo_content": "{{ collection.metafields.custom.seo_content_rich_text | metafield_tag }}"
+      }
+    },
+    "custom_collection_bottom_seo_fields_kabztC": {
+      "type": "custom-collection-bottom-seo-fields",
+      "settings": {
+        "seo_title": "<p>Frequently Asked Questions</p>",
+        "seo_content": "{{ collection.metafields.custom.q_a | metafield_tag }}"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "rich_text_9kVXbD",
+    "subs",
+    "product-grid",
+    "recently-viewed",
+    "cd9249ef-1278-488a-adff-39e2230c5b5d",
+    "custom_collection_bottom_seo_fields_kabztC"
+  ]
+}

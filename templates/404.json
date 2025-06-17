@@ -1,0 +1,75 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "d4779b20-1be6-427c-8915-9f85e32e1559": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21041659347222__d4779b20-1be6-427c-8915-9f85e32e1559-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "404 Page not found",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--21041659347222__d4779b20-1be6-427c-8915-9f85e32e1559-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Oops! It looks like you've stumbled upon a page that doesn't exist. Please check the URL or navigate to another part of our site. If you need assistance, feel free to contact our support team. We're here to help you find what you're looking for</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        },
+        "template--21041659347222__d4779b20-1be6-427c-8915-9f85e32e1559-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Return to home page",
+            "button_link": "https://www.islandliving.sg",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21041659347222__d4779b20-1be6-427c-8915-9f85e32e1559-heading-1",
+        "template--21041659347222__d4779b20-1be6-427c-8915-9f85e32e1559-text-1",
+        "template--21041659347222__d4779b20-1be6-427c-8915-9f85e32e1559-button-1"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": true,
+        "narrow": true,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 96,
+        "padding_bottom": 92
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d4779b20-1be6-427c-8915-9f85e32e1559"
+  ]
+}

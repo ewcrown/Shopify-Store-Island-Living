@@ -1,0 +1,129 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "image_with_text_Pxrjda": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bhUYbK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Warehouse Clearance | 15% off Storewide Sale 2024",
+            "heading_size": "h1",
+            "heading_tag": "h1"
+          }
+        },
+        "text_dk7tdr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Introducing our biggest Year End Sale! Up to 80% off clearance pieces, and 15% off everything else (storewide).  </p><p>Shop now, stocks are limited!</p><p><span style=\"text-decoration:underline\"><strong>Warehouse Sale:</strong></span></p><ul><li><strong>When</strong>: 8-10 November and 15-17 November, 11am-6pm.</li><li><strong>Where</strong>: 8 Kaki Bukit Ave 1, #06-03/04</li></ul><p><span style=\"text-decoration:underline\"><strong>Online Sale Dates:</strong></span> </p><ul><li>A limited range of clearance items will be available online from 12.00am Friday, 8 Nov to 11.59pm Sunday, 24 Nov, 2024 (or until stocks last). </li><li>15% off regular items will apply automatically at check out.</li></ul><p><strong>SHOP ONLINE FROM 12AM, FRI 8 NOV.</strong></p><p>For the full range, visit our showroom.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_KjED3i": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/warehouse-sale-2024",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bhUYbK",
+        "text_dk7tdr",
+        "button_KjED3i"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Sale_Poster_3_91bb24b7-1861-45c3-aaa1-30b6607415c5.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_Mhxipy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_izGjTc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Terms & Conditions",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_zjPpRP": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Warehouse Sale</strong></p><ul><li>There will be an in-person Warehouse Sale at our combined showroom & warehouse location on 8-10 November and 15-17 November, from 11.00am to 6.00pm.</li><li>Online: Starts 12.00am on Friday, 8 November, until 11.59pm Sunday, 17 November (or until stocks run out).</li></ul><p><strong>Sale Mechanics</strong></p><ul><li>Offer cannot be used in combination with any other offer, or applied to previous purchases or the purchase of gift cards.</li><li>15% off storewide applies to regular priced items and will automatically be applied at check out. Cannot be combined or stacked with other discounts or promotions. Offer does not apply to clearance items.</li><li>Clearance items are already marked down, there is no further discount. Prices are as marked.</li><li>The promotion does not apply to items out of stock at the time of purchase unless available for pre-order.</li><li>Offer not redeemable for cash or cash equivalents.</li><li>Island Living reserves the right to modify, replace, or cancel the offer at any time</li></ul><p><strong>Return and Exchange Policy:</strong> </p><ul><li>For clearance items, sale is final and there is no exchange or refund. For regular priced items that are part of the storewide promotion, our regular returns and exchange policy applies. A restocking fee may also apply.</li><li>For more information view our Returns policy here: <a href=\"https://www.islandliving.sg/pages/returns-refunds-policy\">https://www.islandliving.sg/pages/returns-refunds-policy </a></li></ul><p><strong>Payment Methods:</strong> </p><p>Visa, Mastercard, AMEX and Atome are accepted modes of payment methods during the sale.</p><p><strong>Shipping and Delivery:</strong> </p><p>During peak periods, delivery timeframe may be extended to accommodate an increase in order volume. Please expect a wait of up to 2 weeks (or more) to receive your items.</p><p><strong>For more information:</strong> email<strong> </strong>info@islandliving.sg</p>",
+            "text_size": "typeset",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_izGjTc",
+        "text_zjPpRP"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": true,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_Pxrjda",
+    "rich_text_Mhxipy"
+  ]
+}

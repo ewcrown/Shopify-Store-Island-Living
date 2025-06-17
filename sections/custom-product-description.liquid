@@ -1,0 +1,35 @@
+{% comment %} Show why you'll love it if it's not empty {% endcomment %}
+{%- if product.metafields.custom.why_you_ll_love_it != blank -%}
+  <div class="page-width">
+    <h2>Why you'll love it</h2>
+    <p>{{ product.metafields.custom.why_you_ll_love_it }}</p>
+  </div>
+{%- endif -%}
+
+{% comment %} Show product description if it's >= 1000 characters and tagline / why you'll love it doesn't exist {% endcomment %}
+{%- if product.metafields.custom.why_you_ll_love_it == blank and product.metafields.custom.tagline == blank -%}
+  {%- assign pDescSize = product.description | size -%}
+  {%- if pDescSize > 499 -%}
+    <div class="page-width">
+      <h2>Description</h2>
+      <p>{{ product.description }}</p>
+    </div>
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product Descriptions",
+  "class": "section",
+  "presets": [
+    {
+      "name": "Product Descriptions"
+    }
+  ],
+  "enabled_on": {
+    "templates": [
+      "product"
+    ]
+  }
+}
+{% endschema %}

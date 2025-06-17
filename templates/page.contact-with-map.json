@@ -1,0 +1,174 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "h0",
+            "heading_tag": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Questions? Comments? Let your customers get in touch with you by filling out the email form below.</p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_position": "center center",
+        "text_box_position": "center",
+        "text_alignment": "center",
+        "image_ratio": "450px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "250px",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "rich-text-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Can we help?",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "rich-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "rich-text-0",
+        "rich-text-1"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": true,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "show_phone": true,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h2",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "map": {
+      "type": "map",
+      "blocks": {
+        "map-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find Us",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "map-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>8 Kaki Bukit Ave 1, #06-03/04<br/>Mapletree Industrial Trust<br/>S417941</p><p>Tuesday to Friday: 11am - 4pm<br/>Saturday: 11am - 5pm<br/><br/>Closed on Sundays, Mondays and public holidays</p>",
+            "text_size": "typeset",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "map-0",
+        "map-1"
+      ],
+      "settings": {
+        "map_address": "8 Kaki Bukit Ave 1",
+        "map_api_key": "AIzaSyACaxF5G-ghwBNMv1eSjupPN5ISchC8MHU",
+        "map_zoom": 14,
+        "map_style": "silver",
+        "image_position": "center center",
+        "text_box_position": "middle-left",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "400px",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_overlay": "#ffffff",
+        "gradient_overlay": "",
+        "colors_overlay_opacity": 100,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "image-banner",
+    "main",
+    "rich-text",
+    "form",
+    "map"
+  ]
+}

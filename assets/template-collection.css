@@ -1,0 +1,96 @@
+@media screen and (max-width: 749px) {
+  .collection .title:not(.title--no-heading) {
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .collection .title-wrapper--no-heading {
+    margin-top: 6rem;
+  }
+}
+
+.collection {
+  position: relative;
+}
+
+.collection .loading-overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 0 5rem;
+  background-color: rgba(var(--color-background), 0.7);
+}
+
+.collection.loading .loading-overlay {
+  display: block;
+}
+
+.collection--empty .title-wrapper {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.collection--empty .title-wrapper .title {
+  text-transform: none;
+}
+
+.collection .product-grid {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .collection .product-grid.grid--4-col-tablet > .grid__item {
+    max-width: calc(50% - var(--grid-horizontal-spacing) / 2);
+  }
+
+  .collection .product-grid.grid--3-col-tablet > .grid__item {
+    max-width: calc(33.33% - var(--grid-horizontal-spacing) * 2 / 3);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .collection .product-grid.grid--4-col-desktop > .grid__item {
+    max-width: calc(25% - var(--grid-horizontal-spacing) * 3 / 4);
+  }
+
+  .collection .product-grid.grid--3-col-desktop > .grid__item {
+    max-width: calc(33.33% - var(--grid-horizontal-spacing) * 2 / 3);
+  }
+}
+
+/* Styling specifically for FAQ content inside Bottom SEO Content */
+.shopify-section .faq-section.rte h3 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #222 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.shopify-section .faq-section.rte p {
+  font-size: 1.5rem !important;
+  color: #444 !important;
+  line-height: 1.7 !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.shopify-section .faq-section.rte li {
+  font-size: 1.5rem !important;
+  color: #444 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1.2rem !important;
+}
+
+/* Match FAQ heading to 'Why Choose Rattan Furniture?' styling */
+.faq-section.rte h2 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  color: #333 !important;
+  line-height: 1.3 !important;
+}

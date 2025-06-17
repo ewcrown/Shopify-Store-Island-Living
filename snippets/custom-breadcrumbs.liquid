@@ -1,0 +1,21 @@
+{%- if product.metafields.custom.breadcrumb_collection != blank -%}
+  <a href="{{ product.metafields.custom.breadcrumb_collection.value.url }}" class="link">
+    {{- product.metafields.custom.breadcrumb_collection.value.title -}}
+  </a>
+{%- endif -%}
+{%- if product.metafields.custom.breadcrumb_subcollection != blank -%}
+  {%- if product.metafields.custom.breadcrumb_collection -%}
+    &nbsp;<span class="breadcrumb__divider" aria-hidden="true">/</span>&nbsp;
+  {%- endif -%}
+  <a href="{{ product.metafields.custom.breadcrumb_subcollection.value.url }}" class="link">
+    {{- product.metafields.custom.breadcrumb_subcollection.value.title -}}
+  </a>
+{%- endif -%}
+{%- if product.metafields.custom.breadcrumb_sub_subcollection != blank -%}
+  {%- if product.metafields.custom.breadcrumb_subcollection -%}
+    &nbsp;<span class="breadcrumb__divider" aria-hidden="true">/</span>&nbsp;
+  {%- endif -%}
+  <a href="{{ product.metafields.custom.breadcrumb_sub_subcollection.value.url }}" class="link">
+    {{- product.metafields.custom.breadcrumb_sub_subcollection.value.title -}}
+  </a>
+{%- endif -%}

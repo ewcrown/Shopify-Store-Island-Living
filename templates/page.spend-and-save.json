@@ -1,0 +1,123 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "7c579246-4391-4d2b-b32a-2169ff59c6fb": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Spectacular Savings for Chinese New Year",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get ready to save with massive storewide discounts across our entire collection!</p><p>The more you spend, the more you save!</p><p><strong>Spend $500+ save $88</strong></p><p><strong>Spend $1,000+ save $188</strong></p><p><strong>Spend $1,500+ save $288</strong></p><p><strong>Spend $2,500+ save $488</strong></p><p><strong>Stackable savings: </strong>Save even more when you shop <a href=\"https://www.islandliving.sg/collections/sale\" title=\"sale page\"><strong>sale items</strong></a><strong>. </strong></p><p>Discount is automatically applied at checkout for both full price AND sale items (excludes Clearance items).</p><p>Valid from 12am Friday, 12 Jan to 11.59pm Friday, 9 Feb.</p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        },
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://pages/shop-our-collections",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-heading-1",
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-text-1",
+        "template--21874686558486__7c579246-4391-4d2b-b32a-2169ff59c6fb-button-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Square_landing_page_a2377cc6-0eb0-4d68-ada0-c6e47adcc368.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "center",
+        "image_ratio": "750px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "image_mobile": "shopify://shop_images/Square_landing_page_2f6b4239-a886-42eb-a261-7c8736b0f64f.png",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "adapt",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "f0a5fee5-e2fa-4ccb-a2c1-dc479de4b4c4": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21874686558486__f0a5fee5-e2fa-4ccb-a2c1-dc479de4b4c4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/collections/get-it-by-lunar-new-year\" target=\"_blank\" title=\"Get it by Lunar New Year!\"><strong>Need it for the Lunar New Year? </strong>Click here to shop in stock or coming soon items to get delivery by CNY.</a></p>",
+            "text_size": "typeset2",
+            "secondary_color": true,
+            "highlight_phrases": "Click here"
+          }
+        }
+      },
+      "block_order": [
+        "template--21874686558486__f0a5fee5-e2fa-4ccb-a2c1-dc479de4b4c4-text-1"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": true,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#d72c0d",
+        "gradient_background": "",
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "narrow": false,
+        "padding_top": 20,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "7c579246-4391-4d2b-b32a-2169ff59c6fb",
+    "f0a5fee5-e2fa-4ccb-a2c1-dc479de4b4c4",
+    "main"
+  ]
+}

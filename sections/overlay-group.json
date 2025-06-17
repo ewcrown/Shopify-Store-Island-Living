@@ -1,0 +1,262 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "name": "t:sections.overlay-group.name",
+  "type": "custom.overlay",
+  "sections": {
+    "popup": {
+      "type": "popup",
+      "blocks": {
+        "popup-0": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Welcome",
+            "subheading_size": "h3"
+          }
+        },
+        "heading_4t7eHW": {
+          "type": "heading",
+          "settings": {
+            "heading": "$20 off your first online order*",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        },
+        "popup-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to our newsletter to receive $20 off your first order and be the first to hear about new products, sales, and special offers.</p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "popup-2": {
+          "type": "newsletter",
+          "settings": {
+            "text": "",
+            "button_style_secondary": true,
+            "button_full_width": false
+          }
+        },
+        "popup-4": {
+          "type": "floating",
+          "settings": {
+            "subheading": "Newsletter",
+            "show_social_media": "all",
+            "text_box_position": "left",
+            "colors_text": "#1a1b18",
+            "mobile_disabled": true,
+            "mobile_hide_social_media": false,
+            "mobile_social_heading": "Follow us"
+          }
+        },
+        "text_hGtmNg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Only applicable to first online purchase with a minimum spend of $100.</p>",
+            "text_size": "typeset",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "popup-0",
+        "heading_4t7eHW",
+        "popup-1",
+        "popup-2",
+        "popup-4",
+        "text_hGtmNg"
+      ],
+      "settings": {
+        "mode": "enabled",
+        "only_homepage": true,
+        "only_visitor": true,
+        "delay": 11,
+        "expiry": 30,
+        "width": 530,
+        "padding": 20,
+        "text_alignment": "center",
+        "text_box_position": "center",
+        "image_position": "top",
+        "colors_button_label": "#212326",
+        "colors_button_background": "#faeaa1",
+        "colors_text": "#1a1b18",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "colors_shadow": "#a8e8e2"
+      }
+    },
+    "cookie-banner": {
+      "type": "cookie-banner",
+      "blocks": {
+        "cookie-banner-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We use cookies and similar technologies to provide the best experience on our website. <a href=\"/policies/privacy-policy\">Privacy Policy</a></p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "cookie-banner-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Accept",
+            "button_label_2": "No"
+          }
+        }
+      },
+      "block_order": [
+        "cookie-banner-0",
+        "cookie-banner-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "mode": "disabled",
+        "delay": 5,
+        "text_alignment": "left",
+        "text_box_position": "bottom",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "colors_shadow": "#a8e8e2"
+      }
+    },
+    "age-verifier": {
+      "type": "age-verifier",
+      "blocks": {
+        "age-verifier-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Confirm your age",
+            "heading_size": "h2",
+            "heading_tag": "p"
+          }
+        },
+        "age-verifier-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are you 18 years old or older?</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "age-verifier-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Yes I am",
+            "button_label_2": "No I'm not",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "age-verifier-0",
+        "age-verifier-1",
+        "age-verifier-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "mode": "disabled",
+        "expiry": 30,
+        "width": 480,
+        "padding": 40,
+        "text_alignment": "center",
+        "image_position": "right",
+        "colors_button_label": "#212326",
+        "colors_button_background": "#faeaa1",
+        "colors_text": "#1a1b18",
+        "colors_border": "#d2d5d9",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "colors_shadow": "#a8e8e2",
+        "colors_overlay": "#212326",
+        "colors_overlay_opacity": 80,
+        "blur_image": true
+      }
+    },
+    "mobile-dock": {
+      "type": "mobile-dock",
+      "disabled": true,
+      "settings": {
+        "use_custom_colors": false,
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "custom_collection_list_cQCb98": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "featured_collection_qqBzVC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_Px7yFq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_q6rcz4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_ybzA77": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_qqBzVC",
+        "featured_collection_Px7yFq",
+        "featured_collection_q6rcz4",
+        "featured_collection_ybzA77"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_view_all": false,
+        "show_divider": false,
+        "heading": "Collections",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "popup",
+    "cookie-banner",
+    "age-verifier",
+    "mobile-dock",
+    "custom_collection_list_cQCb98"
+  ]
+}

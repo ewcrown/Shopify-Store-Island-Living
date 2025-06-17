@@ -1,0 +1,1278 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_FmJDpK": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/new_arrivals_april_-_non_sale_clearance_banner_3.png",
+            "image_mobile": "shopify://shop_images/New_Arrivals_Apr_non_sale_mobile_banner_1_4afeb290-1095-4e73-95fe-8399c0440977.png",
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h2",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset",
+            "button_label": "",
+            "button_link": "shopify://collections/new",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        },
+        "image_HkLp7R": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/outdoor_furniture_0bb19636-defc-43ca-afb5-bc5e47342500.png",
+            "image_mobile": "shopify://shop_images/vip_massive_clearance_sale_16.png",
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset",
+            "button_label": "",
+            "button_link": "shopify://collections/outdoor-furniture-1",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "image_FmJDpK",
+        "image_HkLp7R"
+      ],
+      "settings": {
+        "slideshow_type": "legacy",
+        "text_alignment": "left",
+        "image_ratio": "adapt_first",
+        "autorotate": true,
+        "autorotate_speed": 7,
+        "full_width": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "adapt_first",
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_overlay": "#1a1b18",
+        "colors_overlay_opacity": 0,
+        "colors_navigation_text": "#ffffff",
+        "colors_navigation_background": "#1a1b18",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "featured-products",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7c0aee17-cd19-47d5-b624-2560e8076946": {
+      "type": "collection-list",
+      "blocks": {
+        "cef94bdc-9545-47ff-a32a-5fcae673ffd4": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "back-in-stock",
+            "image_position": "center center"
+          }
+        },
+        "060e6eac-8ea2-4a89-bb3c-6a642ee393a9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rattan-furniture",
+            "image": "shopify://shop_images/Sunshine_2_Door_Cabinet_Cipta_1.jpg",
+            "image_position": "center center"
+          }
+        },
+        "90c10c56-89b9-4de8-9c39-54532d9284b3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dining-room-furniture",
+            "image": "shopify://shop_images/Dining_furniture.png",
+            "image_position": "center center"
+          }
+        },
+        "8b5e5f24-e121-426a-997a-8a82701136ce": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bedroom-furniture",
+            "image": "shopify://shop_images/HavanaBedBedroomLifestyleSet_5.jpg",
+            "image_position": "center center"
+          }
+        },
+        "987abc60-4cbc-4b34-8c7f-5d0be27b5c6f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "children-baby-furniture",
+            "image": "shopify://shop_images/Nami_wood_bed_square.png",
+            "image_position": "center center"
+          }
+        },
+        "template--17698623095062__7c0aee17-cd19-47d5-b624-2560e8076946-1679607862f02e5347-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "decor-accessories",
+            "image": "shopify://shop_images/decor_and_accessories.png",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_YmejAr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mirrors",
+            "image_position": "center center"
+          }
+        },
+        "template--17698623095062__7c0aee17-cd19-47d5-b624-2560e8076946-1679607862f02e5347-1": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "furniture",
+            "image_position": "center center"
+          }
+        },
+        "template--17698623095062__7c0aee17-cd19-47d5-b624-2560e8076946-1679607862f02e5347-2": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "kitchen-dining",
+            "image": "shopify://shop_images/Kitchen_and_dining_collection.jpg",
+            "image_position": "center center"
+          }
+        },
+        "4eab73df-4fd2-453a-bff1-87b528816c9a": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "cushions-throws",
+            "image": "shopify://shop_images/Olive_Green_Palm_Leaves_Cushion_-_55cm_x_55cm.jpg",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "cef94bdc-9545-47ff-a32a-5fcae673ffd4",
+        "060e6eac-8ea2-4a89-bb3c-6a642ee393a9",
+        "90c10c56-89b9-4de8-9c39-54532d9284b3",
+        "8b5e5f24-e121-426a-997a-8a82701136ce",
+        "987abc60-4cbc-4b34-8c7f-5d0be27b5c6f",
+        "template--17698623095062__7c0aee17-cd19-47d5-b624-2560e8076946-1679607862f02e5347-0",
+        "featured_collection_YmejAr",
+        "template--17698623095062__7c0aee17-cd19-47d5-b624-2560e8076946-1679607862f02e5347-1",
+        "template--17698623095062__7c0aee17-cd19-47d5-b624-2560e8076946-1679607862f02e5347-2",
+        "4eab73df-4fd2-453a-bff1-87b528816c9a"
+      ],
+      "settings": {
+        "show_view_all": false,
+        "show_divider": false,
+        "heading": "Featured Collections",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "guarantees": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee-0": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Free Delivery",
+            "title_size": "h4",
+            "text": "<p><a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">For orders over $80.</a></p>"
+          }
+        },
+        "guarantee-1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "recycle",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Sustainable",
+            "title_size": "h3",
+            "text": "<p>We prefer eco-friendly and sustainable materials.</p>"
+          }
+        },
+        "guarantee-2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "return",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "14 Day Returns",
+            "title_size": "h3",
+            "text": "<p><a href=\"https://www.islandliving.sg/pages/returns-refunds-policy\" target=\"_blank\" title=\"https://www.islandliving.sg/pages/returns-refunds-policy\">Exchange or return eligible items within 14 days.</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee-0",
+        "guarantee-1",
+        "guarantee-2"
+      ],
+      "settings": {
+        "layout": "default",
+        "column_alignment": "center",
+        "horizontal_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    },
+    "featured_collection_m69XXm": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "show_divider": false,
+        "heading": "Best Sellers",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h3",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "secondary_image_max": 1,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_RJVejm": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Ap8Dq8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Promotions",
+            "heading_size": "h1",
+            "heading_tag": "h3"
+          }
+        },
+        "text_6Gzt8L": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_aGQR7G": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW MORE",
+            "button_link": "shopify://pages/promotions",
+            "button_size": "small",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ap8Dq8",
+        "text_6Gzt8L",
+        "button_aGQR7G"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Gili_Coffee_Table_-_White_Wash_1.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "adapt",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "image_banner_NbWnnb": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_NiHbfq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Brand Story",
+            "heading_size": "h1",
+            "heading_tag": "h3"
+          }
+        },
+        "text_GWVNxT": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_FxNkLq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read More",
+            "button_link": "shopify://pages/brand-story",
+            "button_size": "small",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NiHbfq",
+        "text_GWVNxT",
+        "button_FxNkLq"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rattan_Island_Daybed.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "adapt",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "image_banner_FHGtLG": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_FiUAdt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get Inspired",
+            "heading_size": "h1",
+            "heading_tag": "h4"
+          }
+        },
+        "text_7r9daK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your home into a lush getaway with our rattan furniture, tropical patterns and cosy lighting.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_pyayED": {
+          "type": "button",
+          "settings": {
+            "button_label": "View More",
+            "button_link": "shopify://pages/room-inspiration",
+            "button_size": "small",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FiUAdt",
+        "text_7r9daK",
+        "button_pyayED"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Havanabedmirrorinselchaircushionsjava.jpg",
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "adapt",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "29ac5224-eadc-4cf4-9919-7aa99036d96b": {
+      "type": "image-with-text",
+      "blocks": {
+        "0eceaf1c-31c4-4991-81d6-bfc36ebd6eb8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Island Living",
+            "heading_size": "h1",
+            "heading_tag": "h1"
+          }
+        },
+        "template--17698623095062__29ac5224-eadc-4cf4-9919-7aa99036d96b-16796079106c7d87e2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bringing you affordable and stylish furniture and home decor",
+            "heading_size": "h2",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "0eceaf1c-31c4-4991-81d6-bfc36ebd6eb8",
+        "template--17698623095062__29ac5224-eadc-4cf4-9919-7aa99036d96b-16796079106c7d87e2-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/WEB_RES_Island_Living_14may20_136.jpg",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "center",
+        "image_ratio": "adapt",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "dabccfe0-1f20-4d45-a602-3e0f685c6106": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17698623095062__dabccfe0-1f20-4d45-a602-3e0f685c6106-1679607981063e09eb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Island Living aims to infuse the tranquil essence of island life into your home. It's a unique approach that effortlessly combines the relaxing aura of a tropical getaway with the comforts of everyday living.<br/><br/>An innovative project from Designer Karin Rysgaard and former PR specialist Denise Vrontas, central to the brand ethos is a respect for the environment and a love for the raw beauty of nature. That's why we consciously select sustainable materials like reclaimed teak wood and eco-friendly rattan. These natural elements not only add an organic warmth to your home, but they also promote a healthier planet.<br/><br/>Our design strategy focuses on creating a harmonious blend of textures and finishes. Whether it's the rustic textures of natural materials, white wash finishes evoking a bright, sunlit atmosphere, or hand-carved stone pieces, a tribute to the rich craft traditions of island cultures, adding a layer of historical depth and interest to your interiors.<br/><br/>Finally, our plush cushions and textural throws serve to enhance the relaxing ambiance inherent to island living.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "highlight_phrases": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17698623095062__dabccfe0-1f20-4d45-a602-3e0f685c6106-1679607981063e09eb-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "horizontal_content": false,
+        "narrow": false,
+        "full_width": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_DAjwtR": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_HxKRp9": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>My most recent visit to the store was great . The lady was so nice helpful and accommodating. I purchased my table and chairs and received them at home ( my own transport but IL workmen ) in 1 hour and half . Thank you for being so helpful and kind.</p>",
+            "author": "Charlene Wong, Customer"
+          }
+        },
+        "testimonial_VaAYmM": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>It’s such a nice place and beautifully decorated! Could spend all day there. The staff is super friendly and super helpful! Happy place!</p>",
+            "author": "Alexandra Kurmeier, Customer"
+          }
+        },
+        "testimonial_97Yeth": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Fantastic and stylish products at amazing price points!  Bought the Isola bar cart which we hope will encourage many wonderful libations!</p>",
+            "author": "Melanie Fitzgerald, Customer"
+          }
+        },
+        "testimonial_jPJjnW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Thank you, Hafiz and Jen, for the excellent assistance at the showroom today! Your professionalism and helpfulness made the process so smooth. We’ve just placed our order and are excited to receive our new furniture soon!</p>",
+            "author": "Lychee King"
+          }
+        },
+        "testimonial_zfjLTy": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Amirah is responsive in getting back to me with the enquiries and thank you for making it possible for me to purchase the items online using the gift cards.</p>",
+            "author": "Haizat Said, Customer"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_HxKRp9",
+        "testimonial_VaAYmM",
+        "testimonial_97Yeth",
+        "testimonial_jPJjnW",
+        "testimonial_zfjLTy"
+      ],
+      "settings": {
+        "autorotate": true,
+        "autorotate_speed": 5,
+        "hide_images": true,
+        "show_divider": false,
+        "heading": "Hear From Others",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "gallery_TMhKbD": {
+      "type": "gallery",
+      "blocks": {
+        "image_3tYWbb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/noa.styling.design.jpg",
+            "image_position": "center center",
+            "subheading": "Gili Coffee Table",
+            "subheading_size": "h5",
+            "heading": "@noa.styling.design",
+            "heading_size": "h3",
+            "link": "https://www.islandliving.sg/products/gili-coffee-table-50cm?_pos=1&_sid=56cb2b295&_ss=r?collection=",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_NzmqBj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ilovebunnynet.jpg",
+            "image_position": "center center",
+            "subheading": "Planter Pot",
+            "subheading_size": "h5",
+            "heading": "@ilovebunnynet",
+            "heading_size": "h3",
+            "link": "https://www.instagram.com/p/DBVeeCTS0IH/",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_wD4kLY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/chelsealim.design.jpg",
+            "image_position": "center center",
+            "subheading": "Papua Pendant Lamp",
+            "subheading_size": "h5",
+            "heading": "@chelsealim.design",
+            "heading_size": "h3",
+            "link": "https://www.islandliving.sg/products/papua-pendant-lamp-natural?_pos=21&_sid=4065406bb&_ss=r?collection=",
+            "text_box_position": "bottom-left"
+          }
+        },
+        "image_D7PCbP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/nudebyjo.jpg",
+            "image_position": "center center",
+            "subheading": "Hanging Mirror",
+            "subheading_size": "h5",
+            "heading": "@nudebyjo",
+            "heading_size": "h3",
+            "link": "https://www.instagram.com/p/DA4ZmynSLdI/?img_index=1",
+            "text_box_position": "bottom-left"
+          }
+        }
+      },
+      "block_order": [
+        "image_3tYWbb",
+        "image_NzmqBj",
+        "image_wD4kLY",
+        "image_D7PCbP"
+      ],
+      "settings": {
+        "per_row": 4,
+        "spacing_images": 2,
+        "image_height": 280,
+        "apply_overlay": true,
+        "full_width": false,
+        "show_divider": false,
+        "heading": "From Dreams to Reality: #Islandliving In Our Customers' Homes",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h6",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "mobile_image_height": 180,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9da9027a-e6eb-4004-9eb6-8c78dc773852": {
+      "type": "logo-list",
+      "blocks": {
+        "template--17698623095062__9da9027a-e6eb-4004-9eb6-8c78dc773852-1679608008394c2f34-0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/BestinSg_Logo_TFE_2.png",
+            "link": "https://www.thefunempire.com/furniture-store-singapore/"
+          }
+        },
+        "logo_Tz4zEw": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-03-04_at_6.11.41_PM.png",
+            "link": ""
+          }
+        },
+        "logo_kftmGF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/SGRCA-2024-DECALS-BRONZE2.jpg",
+            "link": "https://expatliving.sg/expat-living-best-companies-in-singapore-readers-choice-awards-2024-winners/"
+          }
+        },
+        "logo_XeKUgK": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/RCA2023-DECALS-BRONZE2.jpg",
+            "link": "https://expatliving.sg/expat-living-readers-choice-awards-2023-winners-results/"
+          }
+        },
+        "template--17698623095062__9da9027a-e6eb-4004-9eb6-8c78dc773852-1679608008394c2f34-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/RCA2022-DECALS-BRONZE9.png",
+            "link": "https://expatliving.sg/expat-living-readers-choice-awards-winners-results-for-2022/"
+          }
+        },
+        "template--17698623095062__9da9027a-e6eb-4004-9eb6-8c78dc773852-1679608008394c2f34-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Honeycombers.jpg",
+            "link": "https://thehoneycombers.com/singapore/2022-love-local-readers-choice-awards-singapore/"
+          }
+        }
+      },
+      "block_order": [
+        "template--17698623095062__9da9027a-e6eb-4004-9eb6-8c78dc773852-1679608008394c2f34-0",
+        "logo_Tz4zEw",
+        "logo_kftmGF",
+        "logo_XeKUgK",
+        "template--17698623095062__9da9027a-e6eb-4004-9eb6-8c78dc773852-1679608008394c2f34-2",
+        "template--17698623095062__9da9027a-e6eb-4004-9eb6-8c78dc773852-1679608008394c2f34-1"
+      ],
+      "settings": {
+        "opacity": 72,
+        "show_divider": false,
+        "heading": "Awards",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "p",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e": {
+      "type": "logo-list",
+      "blocks": {
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-0": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/unnamed.jpg",
+            "link": "https://www.homeanddecor.com.sg/gallery/modern-rattan-furniture-home-accessories-natural-decor/"
+          }
+        },
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/LifestyleAsialogo.jpg",
+            "link": "https://www.lifestyleasia.com/sg/living/design-and-interiors/balinese-homeware-shops/"
+          }
+        },
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/screenshot.png",
+            "link": "https://thehoneycombers.com/singapore/island-living-christmas-2019/"
+          }
+        },
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/expat_choise_logo.jpg",
+            "link": "https://www.expatchoice.asia/home/island-living-comes-singapore"
+          }
+        },
+        "929b3477-cbda-4ea4-bfe0-3cdf0bcff1f4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Business_times_logo.png",
+            "link": "https://www.businesstimes.com.sg/lifestyle/design/witty-wicker"
+          }
+        },
+        "933ee886-2fcd-45db-bfda-a89b7c4763a4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Featured-in-tatler.png",
+            "link": ""
+          }
+        },
+        "4c985814-061c-436c-9401-79193029855f": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2021-01-03_at_3.40.26_PM.png",
+            "link": ""
+          }
+        },
+        "8c8f9134-a4f2-4866-b520-6ac2f0656e0f": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Expat_living_logo.png",
+            "link": "https://expatliving.sg/furniture-in-singapore-best-furniture-shops-to-buy-beds-dining-tables/"
+          }
+        },
+        "0fc32bd1-6a18-4e17-a954-50d165774469": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Qanvast_Logo.png",
+            "link": "https://qanvast.com/sg/articles/7-eye-catching-design-ideas-that-make-your-home-pop-2005"
+          }
+        },
+        "a6eec47c-9d10-41b3-bb65-14d912fe278e": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Vanilla_Luxury.jpg",
+            "link": "https://www.vanillaluxury.sg/magazine/our-favourite-furniture-stores-singapore-sofas-dining-tables-beds-sideboards-and-more"
+          }
+        }
+      },
+      "block_order": [
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-0",
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-1",
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-2",
+        "template--17698623095062__ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e-1679608008394c2f34-3",
+        "929b3477-cbda-4ea4-bfe0-3cdf0bcff1f4",
+        "933ee886-2fcd-45db-bfda-a89b7c4763a4",
+        "4c985814-061c-436c-9401-79193029855f",
+        "8c8f9134-a4f2-4866-b520-6ac2f0656e0f",
+        "0fc32bd1-6a18-4e17-a954-50d165774469",
+        "a6eec47c-9d10-41b3-bb65-14d912fe278e"
+      ],
+      "disabled": true,
+      "settings": {
+        "opacity": 72,
+        "show_divider": false,
+        "heading": "As Featured In",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "p",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5cb77139-6bf5-4781-9780-af7df7c3d61d": {
+      "type": "map",
+      "blocks": {
+        "template--17698623095062__5cb77139-6bf5-4781-9780-af7df7c3d61d-16796080482b856b97-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find Us",
+            "heading_size": "h2",
+            "heading_tag": "h5"
+          }
+        },
+        "template--17698623095062__5cb77139-6bf5-4781-9780-af7df7c3d61d-16796080482b856b97-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>8 Kaki Bukit Ave 1, #06-03/04<br/>Mapletree Industrial Trust<br/>S417941</p><p>Tuesday - Saturday: 11am - 5pm<br/><br/>Closed on Sunday, Monday and public holidays</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "button_9TWw4P": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more about our showroom",
+            "button_link": "shopify://pages/showroom",
+            "button_size": "small",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17698623095062__5cb77139-6bf5-4781-9780-af7df7c3d61d-16796080482b856b97-0",
+        "template--17698623095062__5cb77139-6bf5-4781-9780-af7df7c3d61d-16796080482b856b97-2",
+        "button_9TWw4P"
+      ],
+      "settings": {
+        "map_address": "8 Kaki Bukit Ave 1",
+        "map_api_key": "AIzaSyACaxF5G-ghwBNMv1eSjupPN5ISchC8MHU",
+        "map_zoom": 16,
+        "map_style": "standard",
+        "image_position": "center center",
+        "text_box_position": "middle-right",
+        "text_alignment": "center",
+        "image_ratio": "550px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "400px",
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#1a1b18",
+        "colors_overlay": "#ffffff",
+        "gradient_overlay": "",
+        "colors_overlay_opacity": 96,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "c6fbce40-8e85-4151-ab86-74cd50f96191": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18794339959062__c6fbce40-8e85-4151-ab86-74cd50f96191-16881699426412b2e2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--18794339959062__c6fbce40-8e85-4151-ab86-74cd50f96191-16881699426412b2e2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--18794339959062__c6fbce40-8e85-4151-ab86-74cd50f96191-16881699426412b2e2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18794339959062__c6fbce40-8e85-4151-ab86-74cd50f96191-16881699426412b2e2-0",
+        "template--18794339959062__c6fbce40-8e85-4151-ab86-74cd50f96191-16881699426412b2e2-1",
+        "template--18794339959062__c6fbce40-8e85-4151-ab86-74cd50f96191-16881699426412b2e2-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "650px",
+        "enlarge_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_layout": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "enable_video_looping": false,
+        "video_url": "",
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fea14d2d-8512-45d1-9f4a-19a6acd03b2a": {
+      "type": "bundle-products",
+      "blocks": {
+        "template--18794339959062__fea14d2d-8512-45d1-9f4a-19a6acd03b2a-1688169971a73fc813-0": {
+          "type": "product",
+          "settings": {
+            "product": "gili-dining-table-white-wash",
+            "image_ratio": "adapt",
+            "show_vendor": false,
+            "show_quick_buy": false,
+            "enable_quick_view": true,
+            "color": "#000000",
+            "horizontal": 30,
+            "vertical": 40
+          }
+        },
+        "template--18794339959062__fea14d2d-8512-45d1-9f4a-19a6acd03b2a-1688169971a73fc813-1": {
+          "type": "product",
+          "settings": {
+            "product": "nashville-arm-chair-smokey-white-wash",
+            "image_ratio": "adapt",
+            "show_vendor": false,
+            "show_quick_buy": false,
+            "enable_quick_view": true,
+            "color": "#000000",
+            "horizontal": 70,
+            "vertical": 45
+          }
+        },
+        "template--18794339959062__fea14d2d-8512-45d1-9f4a-19a6acd03b2a-1688169971a73fc813-2": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "image_ratio": "adapt",
+            "show_vendor": false,
+            "show_quick_buy": false,
+            "enable_quick_view": true,
+            "color": "#000000",
+            "horizontal": 45,
+            "vertical": 65
+          }
+        }
+      },
+      "block_order": [
+        "template--18794339959062__fea14d2d-8512-45d1-9f4a-19a6acd03b2a-1688169971a73fc813-0",
+        "template--18794339959062__fea14d2d-8512-45d1-9f4a-19a6acd03b2a-1688169971a73fc813-1",
+        "template--18794339959062__fea14d2d-8512-45d1-9f4a-19a6acd03b2a-1688169971a73fc813-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "image_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "full_width": false,
+        "show_divider": false,
+        "subheading": "Bundle & Save",
+        "subheading_size": "h5",
+        "heading": "Build Your Own Basket",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "63df272e-db17-47d5-9923-34bc9a780e1e": {
+      "type": "collage",
+      "blocks": {
+        "template--18794339959062__63df272e-db17-47d5-9923-34bc9a780e1e-16881700529e95c154-0": {
+          "type": "video",
+          "settings": {
+            "enable_video_looping": false,
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "heading": "Video heading"
+          }
+        },
+        "template--18794339959062__63df272e-db17-47d5-9923-34bc9a780e1e-16881700529e95c154-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false,
+            "enable_quick_view": true
+          }
+        },
+        "template--18794339959062__63df272e-db17-47d5-9923-34bc9a780e1e-16881700529e95c154-2": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18794339959062__63df272e-db17-47d5-9923-34bc9a780e1e-16881700529e95c154-0",
+        "template--18794339959062__63df272e-db17-47d5-9923-34bc9a780e1e-16881700529e95c154-1",
+        "template--18794339959062__63df272e-db17-47d5-9923-34bc9a780e1e-16881700529e95c154-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "apply_overlay": true,
+        "show_divider": false,
+        "heading": "Multimedia collage",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b63466bc-2a23-4309-a02a-7fdbe8c70bbe": {
+      "type": "collection-list",
+      "blocks": {
+        "template--18794339959062__b63466bc-2a23-4309-a02a-7fdbe8c70bbe-16881700709bde1fd9-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "template--18794339959062__b63466bc-2a23-4309-a02a-7fdbe8c70bbe-16881700709bde1fd9-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "template--18794339959062__b63466bc-2a23-4309-a02a-7fdbe8c70bbe-16881700709bde1fd9-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18794339959062__b63466bc-2a23-4309-a02a-7fdbe8c70bbe-16881700709bde1fd9-0",
+        "template--18794339959062__b63466bc-2a23-4309-a02a-7fdbe8c70bbe-16881700709bde1fd9-1",
+        "template--18794339959062__b63466bc-2a23-4309-a02a-7fdbe8c70bbe-16881700709bde1fd9-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_view_all": false,
+        "show_divider": false,
+        "heading": "Collections",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "264288a3-2af5-49ea-90f3-4f687d0c7f42": {
+      "type": "image-banner",
+      "blocks": {
+        "template--18794339959062__264288a3-2af5-49ea-90f3-4f687d0c7f42-1688170080e401e8ec-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "template--18794339959062__264288a3-2af5-49ea-90f3-4f687d0c7f42-1688170080e401e8ec-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--18794339959062__264288a3-2af5-49ea-90f3-4f687d0c7f42-1688170080e401e8ec-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18794339959062__264288a3-2af5-49ea-90f3-4f687d0c7f42-1688170080e401e8ec-0",
+        "template--18794339959062__264288a3-2af5-49ea-90f3-4f687d0c7f42-1688170080e401e8ec-1",
+        "template--18794339959062__264288a3-2af5-49ea-90f3-4f687d0c7f42-1688170080e401e8ec-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_position": "center center",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": true,
+        "full_width": true,
+        "show_divider": false,
+        "image_behavior": "none",
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_gH49Yh": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_Rd4TbN": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Join Our List",
+            "heading_tag": "h2"
+          }
+        },
+        "paragraph_gJRdc3": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<h2>Join Our List & Get $20 Off Your First Purchase!</h2>"
+          }
+        },
+        "email_form_Gn8Dz4": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_Rd4TbN",
+        "paragraph_gJRdc3",
+        "email_form_Gn8Dz4"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "full_width": true,
+        "show_divider": false,
+        "colors_text": "#ffffff",
+        "colors_border": "#ffffff",
+        "colors_background": "#93918e",
+        "gradient_background": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collection",
+    "7c0aee17-cd19-47d5-b624-2560e8076946",
+    "guarantees",
+    "featured_collection_m69XXm",
+    "image_banner_RJVejm",
+    "image_banner_NbWnnb",
+    "image_banner_FHGtLG",
+    "29ac5224-eadc-4cf4-9919-7aa99036d96b",
+    "dabccfe0-1f20-4d45-a602-3e0f685c6106",
+    "testimonials_DAjwtR",
+    "gallery_TMhKbD",
+    "9da9027a-e6eb-4004-9eb6-8c78dc773852",
+    "ac9b5c6c-0a13-4c77-bbe9-d0025bb84e1e",
+    "5cb77139-6bf5-4781-9780-af7df7c3d61d",
+    "c6fbce40-8e85-4151-ab86-74cd50f96191",
+    "fea14d2d-8512-45d1-9f4a-19a6acd03b2a",
+    "63df272e-db17-47d5-9923-34bc9a780e1e",
+    "b63466bc-2a23-4309-a02a-7fdbe8c70bbe",
+    "264288a3-2af5-49ea-90f3-4f687d0c7f42",
+    "newsletter_gH49Yh"
+  ]
+}
