@@ -1,0 +1,26 @@
+.desktop-hide {
+  display: none;
+}
+
+
+@media(max-width:749px) {
+  .desktop-hide {
+    display: block;
+  }
+
+
+  .product__info-wrapper.grid__item .product__tax,
+  .product__info-wrapper.grid__item .product-price-info,
+  .product__info-wrapper.grid__item .product__title,
+  .product__info-wrapper.grid__item .product-breadcrumbs {
+    display: none;
+  }
+
+  .product-mobile-info {
+    margin-bottom: 30px;
+  }
+
+  .product-mobile-info .price bdi {
+    font-size: 26px;
+  }
+}

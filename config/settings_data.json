@@ -54,7 +54,7 @@
     "color_swatches_enabled": true,
     "color_swatches_position": "top",
     "color_swatches_max_items": 4,
-    "cart_drawer_enabled": false,
+    "cart_drawer_enabled": true,
     "show_cart_note": true,
     "show_shipping_calculator": false,
     "shipping_calculator_default_country": "Singapore",

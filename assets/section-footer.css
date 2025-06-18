@@ -50,10 +50,10 @@
 }
 
 @media screen and (min-width: 750px) {
-  .footer__content-top {
-    padding-top: 7rem;
-    padding-bottom: 6rem;
-  }
+.footer__content-top {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
 
   .footer__content-top .grid {
     row-gap: 6rem;

@@ -9,6 +9,88 @@
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-product-review.css' | asset_url }}" media="print" onload="this.media='all'">
 
+
+    {%- liquid
+      assign product_form_id = 'product-form-' | append: section.id
+
+      assign titleBlock = section.blocks | where: 'type', 'title' | first
+      assign titleBlockPrice = false
+      if titleBlock.settings.show_price == true
+        assign titleBlockPrice = true
+      endif
+    -%}
+
+{% capture product_cap %}
+  {%- for block in section.blocks -%}
+
+    {%- case block.type -%}
+
+      {%- when 'breadcrumb' -%}
+      {% render 'custom-breadcrumbs' %}
+          {%- when 'title' -%}
+              <div class="product__title" {{ block.shopify_attributes }}>
+                <h1 class="product__heading {{ block.settings.title_size }}">
+                  {{ product.title | escape }}
+                </h1>
+                {%- if block.settings.show_price -%}
+                  <div class="no-js-hidden" id="price-{{ section.id }}">
+                    {%- liquid
+                      assign price_class = 'price--' | append: block.settings.price_size
+                      render 'price', product: product, use_variant: true, show_badges: false, price_class: price_class
+                    -%}
+                  </div>
+                {%- endif -%}
+              </div>
+              {%- if block.settings.show_price -%}
+                {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                  <div class="product__tax caption rte">
+                    {%- if shop.taxes_included -%}
+                      {{ 'products.product.include_taxes' | t }}
+                    {%- endif -%}
+                    {%- if shop.shipping_policy.body != blank -%}
+                      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+                <div {{ block.shopify_attributes }}>
+                  {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    {{ form | payment_terms }}
+                    {%- endform -%}
+                </div>
+              {%- endif -%}
+            {%- when 'price' -%}
+              {%- if titleBlockPrice == false -%}
+                <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
+                  {%- liquid
+                    assign show_badges = block.settings.show_badges
+                    assign price_class = 'price--' | append: block.settings.price_size
+                    render 'price', product: product, use_variant: true, show_badges: show_badges, price_class: price_class, sale_badge_basis: block.settings.sale_badge_basis
+                  -%}
+                </div>
+                {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                  <div class="product__tax caption rte">
+                    {%- if shop.taxes_included -%}
+                      {{ 'products.product.include_taxes' | t }}
+                    {%- endif -%}
+                    {%- if shop.shipping_policy.body != blank -%}
+                      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+                <div {{ block.shopify_attributes }}>
+                  {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+                  {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    {{ form | payment_terms }}
+                  {%- endform -%}
+                </div>
+              {%- endif -%}
+    {%- endcase -%}
+  {%- endfor -%}
+{% endcapture %}
+
 {% comment %} MARK:- Custom CSS {% endcomment %}
 
 <style>
@@ -77,6 +159,9 @@
     <product-recently-viewed data-product-id="{{ product.id }}" class="hidden"></product-recently-viewed>
     <div class="grid__item product__media-wrapper">
       <span id="ProductImages"></span>
+      <div class="desktop-hide product-mobile-info">
+      {{ product_cap }}
+      </div>
       <media-gallery
         id="MediaGallery-{{ section.id }}"
         role="region"
@@ -607,20 +692,12 @@
       </media-gallery>
     </div>
 
-    {%- liquid
-      assign product_form_id = 'product-form-' | append: section.id
-
-      assign titleBlock = section.blocks | where: 'type', 'title' | first
-      assign titleBlockPrice = false
-      if titleBlock.settings.show_price == true
-        assign titleBlockPrice = true
-      endif
-    -%}
     <div class="product__info-wrapper grid__item">
       <div
         id="ProductInfo-{{ section.id }}"
         class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}"
       >
+        
         {%- for block in section.blocks -%}
           {%- case block.type -%}
               {% comment %} MARK:- Custom block types {% endcomment %}
@@ -709,7 +786,7 @@
               {%- endif -%}
             {%- when 'price' -%}
               {%- if titleBlockPrice == false -%}
-                <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
+                <div class="no-js-hidden product-price-info" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
                   {%- liquid
                     assign show_badges = block.settings.show_badges
                     assign price_class = 'price--' | append: block.settings.price_size
@@ -1212,6 +1289,7 @@
               </div>
           {%- endcase -%}
         {%- endfor -%}
+        
       </div>
     </div>
   </div>

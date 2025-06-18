@@ -1,3 +1,4 @@
+<div class="product-breadcrumbs">
 {%- if product.metafields.custom.breadcrumb_collection != blank -%}
   <a href="{{ product.metafields.custom.breadcrumb_collection.value.url }}" class="link">
     {{- product.metafields.custom.breadcrumb_collection.value.title -}}
@@ -19,3 +20,4 @@
     {{- product.metafields.custom.breadcrumb_sub_subcollection.value.title -}}
   </a>
 {%- endif -%}
+</div>

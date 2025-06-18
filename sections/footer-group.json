@@ -21,6 +21,13 @@
             "menu": "footer"
           }
         },
+        "link_list_HVkgeY": {
+          "type": "link_list",
+          "settings": {
+            "heading": "About",
+            "menu": "customer-account-main-menu"
+          }
+        },
         "b76fd7de-4cc8-4de1-8d49-5636a4b1ad64": {
           "type": "image",
           "settings": {
@@ -34,6 +41,7 @@
       },
       "block_order": [
         "footer-0",
+        "link_list_HVkgeY",
         "b76fd7de-4cc8-4de1-8d49-5636a4b1ad64"
       ],
       "settings": {

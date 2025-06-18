@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "empty-space": {
@@ -21,8 +21,7 @@
       "blocks": {
         "dc23b92d-faf8-4cff-bc77-51246928ea40": {
           "type": "collection_url",
-          "settings": {
-          }
+          "settings": {}
         },
         "title": {
           "type": "title",
@@ -34,8 +33,7 @@
         },
         "rating": {
           "type": "rating",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
@@ -81,7 +79,7 @@
           }
         },
         "53c301cb-3275-4301-9ab1-4e3725bdd7b7": {
-          "type": "shopify://apps/back-in-stock-customer-alerts/blocks/app-block/bfa6a8c4-24e2-411a-9396-e35031b33f34",
+          "type": "shopify://apps/amp-back-in-stock/blocks/app-block/bfa6a8c4-24e2-411a-9396-e35031b33f34",
           "settings": {
             "caption": "Notify When Available",
             "font_size": 14,
@@ -160,8 +158,7 @@
         },
         "09f4a8ae-3941-4178-ba5e-3c49e14b1f10": {
           "type": "pickup_avail",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -182,9 +179,7 @@
         "sticky_cart",
         "09f4a8ae-3941-4178-ba5e-3c49e14b1f10"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
@@ -210,8 +205,7 @@
     },
     "34b32d11-9bb8-4c6d-bf0f-c1290e2ac114": {
       "type": "custom-product-description",
-      "settings": {
-      }
+      "settings": {}
     },
     "6f064789-5d7e-4d55-9ea2-de5c565eb01f": {
       "type": "empty-space",
