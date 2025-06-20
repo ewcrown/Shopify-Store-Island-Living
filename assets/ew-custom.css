@@ -3,11 +3,27 @@
 }
 
 
+.ew-product-swatch {
+  display: block !important;
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  background-size: 100% 100%;
+  outline-offset: 2px;
+  outline: 1px solid #05350c;
+  margin-right: 16px;
+}
+
+@media(min-width:750px) {
+  .footer-block-image {
+    margin-top: 20px;
+  }
+}
+
 @media(max-width:749px) {
   .desktop-hide {
     display: block;
   }
-
 
   .product__info-wrapper.grid__item .product__tax,
   .product__info-wrapper.grid__item .product-price-info,
@@ -23,4 +39,81 @@
   .product-mobile-info .price bdi {
     font-size: 26px;
   }
+
+  .product-mobile-info .wishlist-hero-product-app-block,
+  .product__info-wrapper .jdgm-widget {
+    display: none !important;
+  }
+
+}
+
+.product-mobile-info .jdgm-widget {
+  margin-bottom: 20px;
+}
+
+/* wrap becomes a 2-row horiz-scroll grid */
+.product-addon-wrap {
+  scroll-padding-left: 1rem;
+  scroll-padding-right: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  /* ✅ add this */
+  scroll-snap-type: x mandatory;
+  flex-wrap: nowrap;
+}
+
+/* each block becomes one “cell” in that grid */
+.product-addon-block {
+  flex: 0 0 calc(25% - 0.5rem);
+  scroll-snap-align: start;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 4rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.product-addon-block img {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* optional: hide scrollbar in WebKit browsers */
+.product-addon-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+.product-addon-block h3,
+.product-addon-block p {
+  margin: 10px 0px;
+}
+
+.product-addon-wrap::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.product-addon-block a {
+  padding: 6px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: normal;
+  color: #000;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.product-addon-block a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.product-addon-wrap-outer {
+  overflow-x: auto;
+  width: 100%;
 }

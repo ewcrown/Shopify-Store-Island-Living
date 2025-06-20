@@ -41,75 +41,157 @@
                   {%- for filter in results.filters -%}
                     {%- case filter.type -%}
                     {%- when 'boolean' or 'list' -%}
-                      {%- liquid
-                        assign is_color = false
-                        if enable_filtering_color_swatches
-                          assign swatch_file_extension = 'png'
-                          assign swatch_trigger = 'products.product.color_swatch_trigger' | t | downcase
-                          assign downcased_label = filter.label | downcase
-                          if downcased_label contains swatch_trigger
-                            assign is_color = true
-                          elsif swatch_trigger == 'color' and downcased_label contains 'colour'
-                            assign is_color = true
+                      
+
+                      {% if filter.label == "Availability" %}
+                        {%- liquid
+                          assign is_color = false
+                          if enable_filtering_color_swatches
+                            assign swatch_file_extension = 'png'
+                            assign swatch_trigger = 'products.product.color_swatch_trigger' | t | downcase
+                            assign downcased_label = filter.label | downcase
+                            if downcased_label contains swatch_trigger
+                              assign is_color = true
+                            elsif swatch_trigger == 'color' and downcased_label contains 'colour'
+                              assign is_color = true
+                            endif
                           endif
-                        endif
-                      -%}
-                      <details open class="js-filter" data-index="{{ forloop.index }}" aria-expanded="false">
-                        <summary class="facets__header">
-                          <span class="facets__selected">
-                            {{ filter.label | escape }}
-                            {%- if filter.active_values.size > 0 -%}
-                              <span class="count-bubble">{{ filter.active_values.size }}</span>
+                        -%}
+                        <details open class="js-filter" data-index="{{ forloop.index }}" aria-expanded="false">
+                          <summary class="facets__header">
+                            <span class="facets__selected">
+                              {{ filter.label | escape }}
+                              {%- if filter.active_values.size > 0 -%}
+                                <span class="count-bubble">{{ filter.active_values.size }}</span>
+                              {%- endif -%}
+                            </span>
+                            {% render 'icon', icon: 'caret' %}
+                          </summary>
+                          <facet-remove>
+                            <a href="{{ filter.url_to_remove }}" class="facets__reset link link--underline" >{{ 'products.facets.reset' | t }}</a>
+                          </facet-remove>
+                          <ul class="facets__list{% if is_color %} facets__list--swatch{% if color_swatches_add_label %} facets__list--swatch-label{% endif %}{% endif %} list-unstyled" role="list">
+                            {%- for value in filter.values -%}
+                              {%- liquid
+                                if is_color
+                                  assign color_file_name = value.label | handle | append: '.' | append: swatch_file_extension
+                                  assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+                                  assign color_swatch_fallback = value.label | split: ' ' | last | handle
+                                endif
+                              -%}
+                              <li class="list-menu__item facets__item{% if forloop.index > filter_max_items %} facets__item--alt{% endif %}">
+                                <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}" title="{{ value.label }}">
+                                  <input type="checkbox"
+                                    name="{{ value.param_name }}"
+                                    value="{{ value.value }}"
+                                    id="Filter-{{ filter.label | escape }}-{{ forloop.index }}"
+                                    {% if value.active %}checked="checked"{% endif %}
+                                    {% if value.count == 0 and value.active == false %}disabled="disabled"{% endif %}
+                                  />
+                                  {%- if is_color -%}
+                                    <span class="color__swatch" style="--swatch-background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %} --swatch-background-image: url({{ color_image }});{% endif %}">
+                                      <span class="color__swatch-dot"></span>
+                                    </span>
+                                    <span class="color__swatch-label">{{ value.label | escape }}&nbsp;<span class="caption-with-letter-spacing">({{ value.count }})</span></span>
+                                  {%- else -%}
+                                    <span class="icon"></span>
+                                    {{ value.label | escape }}&nbsp;<span class="caption-with-letter-spacing">({{ value.count }})</span>
+                                  {%- endif -%}
+                                </label>
+                              </li>
+                            {%- endfor -%}
+                         <li class="list-menu__item facets__item">
+                                <label for="Filter-Pre Order-1" class="facet-checkbox" title="Yes">
+                                  <input type="checkbox" name="filter.p.m.custom.pre_order" value="1" id="Filter-Pre Order-1"><span class="icon"></span>
+                                    Pre Order&nbsp;<span class="caption-with-letter-spacing">(1)</span></label>
+                              </li>
+                              
+                          </ul>
+                          {%- if filter.values.size > filter_max_items -%}
+                            {%- if is_color == false or is_color and color_swatches_add_label -%}
+                              <show-more-button>
+                                <div class="button-show-more no-js-hidden">
+                                  <span aria-hidden="true">{% render 'icon', icon: 'horizontal-dots' %}</span>
+                                  <span class="label-show-more visually-hidden">{{ 'products.facets.show_more' | t }}</span>
+                                  <span class="label-show-more visually-hidden hidden">{{ 'products.facets.show_less' | t }}</span>
+                                </div>
+                              </show-more-button>
                             {%- endif -%}
-                          </span>
-                          {% render 'icon', icon: 'caret' %}
-                        </summary>
-                        <facet-remove>
-                          <a href="{{ filter.url_to_remove }}" class="facets__reset link link--underline" >{{ 'products.facets.reset' | t }}</a>
-                        </facet-remove>
-                        <ul class="facets__list{% if is_color %} facets__list--swatch{% if color_swatches_add_label %} facets__list--swatch-label{% endif %}{% endif %} list-unstyled" role="list">
-                          {%- for value in filter.values -%}
-                            {%- liquid
-                              if is_color
-                                assign color_file_name = value.label | handle | append: '.' | append: swatch_file_extension
-                                assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
-                                assign color_swatch_fallback = value.label | split: ' ' | last | handle
-                              endif
-                            -%}
-                            <li class="list-menu__item facets__item{% if forloop.index > filter_max_items %} facets__item--alt{% endif %}">
-                              <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}" title="{{ value.label }}">
-                                <input type="checkbox"
-                                  name="{{ value.param_name }}"
-                                  value="{{ value.value }}"
-                                  id="Filter-{{ filter.label | escape }}-{{ forloop.index }}"
-                                  {% if value.active %}checked="checked"{% endif %}
-                                  {% if value.count == 0 and value.active == false %}disabled="disabled"{% endif %}
-                                />
-                                {%- if is_color -%}
-                                  <span class="color__swatch" style="--swatch-background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %} --swatch-background-image: url({{ color_image }});{% endif %}">
-                                    <span class="color__swatch-dot"></span>
-                                  </span>
-                                  <span class="color__swatch-label">{{ value.label | escape }}&nbsp;<span class="caption-with-letter-spacing">({{ value.count }})</span></span>
-                                {%- else -%}
-                                  <span class="icon"></span>
-                                  {{ value.label | escape }}&nbsp;<span class="caption-with-letter-spacing">({{ value.count }})</span>
-                                {%- endif -%}
-                              </label>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                        {%- if filter.values.size > filter_max_items -%}
-                          {%- if is_color == false or is_color and color_swatches_add_label -%}
-                            <show-more-button>
-                              <div class="button-show-more no-js-hidden">
-                                <span aria-hidden="true">{% render 'icon', icon: 'horizontal-dots' %}</span>
-                                <span class="label-show-more visually-hidden">{{ 'products.facets.show_more' | t }}</span>
-                                <span class="label-show-more visually-hidden hidden">{{ 'products.facets.show_less' | t }}</span>
-                              </div>
-                            </show-more-button>
                           {%- endif -%}
-                        {%- endif -%}
-                      </details>
+                        </details>
+                      {% else  %}
+                        {% unless filter.label == "Pre Order" %}
+                          {%- liquid
+                            assign is_color = false
+                            if enable_filtering_color_swatches
+                              assign swatch_file_extension = 'png'
+                              assign swatch_trigger = 'products.product.color_swatch_trigger' | t | downcase
+                              assign downcased_label = filter.label | downcase
+                              if downcased_label contains swatch_trigger
+                                assign is_color = true
+                              elsif swatch_trigger == 'color' and downcased_label contains 'colour'
+                                assign is_color = true
+                              endif
+                            endif
+                          -%}
+                          <details open class="js-filter" data-index="{{ forloop.index }}" aria-expanded="false">
+                            <summary class="facets__header">
+                              <span class="facets__selected">
+                                {{ filter.label | escape }}
+                                {%- if filter.active_values.size > 0 -%}
+                                  <span class="count-bubble">{{ filter.active_values.size }}</span>
+                                {%- endif -%}
+                              </span>
+                              {% render 'icon', icon: 'caret' %}
+                            </summary>
+                            <facet-remove>
+                              <a href="{{ filter.url_to_remove }}" class="facets__reset link link--underline" >{{ 'products.facets.reset' | t }}</a>
+                            </facet-remove>
+                            <ul class="facets__list{% if is_color %} facets__list--swatch{% if color_swatches_add_label %} facets__list--swatch-label{% endif %}{% endif %} list-unstyled" role="list">
+                              {%- for value in filter.values -%}
+                                {%- liquid
+                                  if is_color
+                                    assign color_file_name = value.label | handle | append: '.' | append: swatch_file_extension
+                                    assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+                                    assign color_swatch_fallback = value.label | split: ' ' | last | handle
+                                  endif
+                                -%}
+                                <li class="list-menu__item facets__item{% if forloop.index > filter_max_items %} facets__item--alt{% endif %}">
+                                  <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}" title="{{ value.label }}">
+                                    <input type="checkbox"
+                                      name="{{ value.param_name }}"
+                                      value="{{ value.value }}"
+                                      id="Filter-{{ filter.label | escape }}-{{ forloop.index }}"
+                                      {% if value.active %}checked="checked"{% endif %}
+                                      {% if value.count == 0 and value.active == false %}disabled="disabled"{% endif %}
+                                    />
+                                    {%- if is_color -%}
+                                      <span class="color__swatch" style="--swatch-background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %} --swatch-background-image: url({{ color_image }});{% endif %}">
+                                        <span class="color__swatch-dot"></span>
+                                      </span>
+                                      <span class="color__swatch-label">{{ value.label | escape }}&nbsp;<span class="caption-with-letter-spacing">({{ value.count }})</span></span>
+                                    {%- else -%}
+                                      <span class="icon"></span>
+                                      {{ value.label | escape }}&nbsp;<span class="caption-with-letter-spacing">({{ value.count }})</span>
+                                    {%- endif -%}
+                                  </label>
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                            {%- if filter.values.size > filter_max_items -%}
+                              {%- if is_color == false or is_color and color_swatches_add_label -%}
+                                <show-more-button>
+                                  <div class="button-show-more no-js-hidden">
+                                    <span aria-hidden="true">{% render 'icon', icon: 'horizontal-dots' %}</span>
+                                    <span class="label-show-more visually-hidden">{{ 'products.facets.show_more' | t }}</span>
+                                    <span class="label-show-more visually-hidden hidden">{{ 'products.facets.show_less' | t }}</span>
+                                  </div>
+                                </show-more-button>
+                              {%- endif -%}
+                            {%- endif -%}
+                          </details>
+                        {% endunless %}
+                      {% endif %}
                     {%- when 'price_range' -%}
                       {%- liquid
                         assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','

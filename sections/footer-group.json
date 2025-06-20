@@ -28,6 +28,13 @@
             "menu": "customer-account-main-menu"
           }
         },
+        "link_list_TCzL3H": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Sale",
+            "menu": "anniversary-sale"
+          }
+        },
         "b76fd7de-4cc8-4de1-8d49-5636a4b1ad64": {
           "type": "image",
           "settings": {
@@ -42,6 +49,7 @@
       "block_order": [
         "footer-0",
         "link_list_HVkgeY",
+        "link_list_TCzL3H",
         "b76fd7de-4cc8-4de1-8d49-5636a4b1ad64"
       ],
       "settings": {

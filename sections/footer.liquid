@@ -41,6 +41,7 @@
           <div class="grid__item footer__content-left{% if section.blocks.size >= 3 and enable_right_column %} footer__content-left--alt{% endif %}{% if section.blocks.size == 1 and enable_right_column == false %} footer__content-left--only{% endif %}">
             <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet">
               {%- for block in section.blocks -%}
+                {% unless block.type ==  "image" %}
                 <footer-accordion class="accordion footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
                   <details open>
                     <summary tabindex="-1">
@@ -64,36 +65,10 @@
                             {%- endfor -%}
                           </ul>
                         {%- endif -%}
-                      {%- when 'image' -%}
-                        <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                          {%- if block.settings.link != blank -%}
-                            <a href="{{ block.settings.link }}">
-                          {%- endif -%}
-                            {%- if block.settings.image != blank -%}
-                              {%- liquid
-                                assign image_width = block.settings.image_width
-                                assign image_width_2x = block.settings.image_width | times: 2
-                              -%}
-                              <img
-                                srcset= "{{ block.settings.image | image_url: width: image_width }}, {{ block.settings.image | image_url: width: image_width_2x }} 2x"
-                                src="{{ block.settings.image | image_url: width: image_width }}"
-                                alt="{{ block.settings.image.alt | escape }}"
-                                loading="lazy"
-                                width="{{ block.settings.image.width }}"
-                                height="{{ block.settings.image.height }}"
-                                style="max-width: min(100%, {{ image_width }}px);"
-                              />
-                            {%- else -%}
-                              {{ 'image' | placeholder_svg_tag: 'placeholder' }}
-                            {%- endif -%}
-                          {%- if block.settings.link != blank -%}
-                            </a>
-                          {%- endif -%}
-                          <p class="caption-large">{{ block.settings.text }}</p>
-                        </div>
                     {%- endcase -%}
                   </details>
                 </footer-accordion>
+                {% endunless %}
               {%- endfor -%}
             </div>
           </div>
@@ -165,6 +140,10 @@
                             {%- endif -%}
                             
                           {%- endform -%}
+
+
+
+                   
                         </div>
                         {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
                           <div class="footer__follow-on-shop">
@@ -182,8 +161,43 @@
                           </ul>
                         {%- endif -%}
                       </div>
+                                                {%- for block in section.blocks -%}
+                            {% if block.type ==  "image" %}
+
+                                    <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                                      {%- if block.settings.link != blank -%}
+                                        <a href="{{ block.settings.link }}">
+                                      {%- endif -%}
+                                        {%- if block.settings.image != blank -%}
+                                          {%- liquid
+                                            assign image_width = block.settings.image_width
+                                            assign image_width_2x = block.settings.image_width | times: 2
+                                          -%}
+                                          <img
+                                            srcset= "{{ block.settings.image | image_url: width: image_width }}, {{ block.settings.image | image_url: width: image_width_2x }} 2x"
+                                            src="{{ block.settings.image | image_url: width: image_width }}"
+                                            alt="{{ block.settings.image.alt | escape }}"
+                                            loading="lazy"
+                                            width="{{ block.settings.image.width }}"
+                                            height="{{ block.settings.image.height }}"
+                                            style="max-width: min(100%, {{ image_width }}px);"
+                                          />
+                                        {%- else -%}
+                                          {{ 'image' | placeholder_svg_tag: 'placeholder' }}
+                                        {%- endif -%}
+                                      {%- if block.settings.link != blank -%}
+                                        </a>
+                                      {%- endif -%}
+                                      <p class="caption-large">{{ block.settings.text }}</p>
+                                    </div>
+
+                            {% endif %}
+                          {%- endfor -%}
                     </details>
                   </footer-accordion>
+
+
+
                 {%- else -%}
                   <footer-accordion class="accordion footer-block--social" data-open>
                     <details open>

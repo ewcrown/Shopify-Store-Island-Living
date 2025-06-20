@@ -25,6 +25,8 @@
 
     {%- case block.type -%}
 
+      {%- when '@app' -%}
+          {% render block %}
       {%- when 'breadcrumb' -%}
       {% render 'custom-breadcrumbs' %}
           {%- when 'title' -%}
@@ -751,6 +753,10 @@
               >
                 {{- product.selected_or_first_available_variant.sku -}}
               </p>
+              {%- when 'add_ons' -%}
+                {% render 'ew-product-addons', product: product %}
+              {%- when 'swatches' -%}
+                {% render 'ew-product-swatches', product: product %}
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
                 <h1 class="product__heading {{ block.settings.title_size }}">
@@ -1542,42 +1548,6 @@
   endif
 -%}
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org/",
-    "@type": "Product",
-    "name": {{ product.title | json }},
-    "url": {{ request.origin | append: product.url | json }},
-    {%- if seo_media -%}
-      "image": [
-        {{ seo_media | image_url | prepend: "https:" | json }}
-      ],
-    {%- endif -%}
-    "description": {{ product.description | strip_html | json }},
-    {%- if product.selected_or_first_available_variant.sku != blank -%}
-      "sku": {{ product.selected_or_first_available_variant.sku | json }},
-    {%- endif -%}
-    "brand": {
-      "@type": "Thing",
-      "name": {{ product.vendor | json }}
-    },
-    "offers": [
-      {%- for variant in product.variants -%}
-        {
-          "@type" : "Offer",
-          {%- if variant.sku != blank -%}
-            "sku": {{ variant.sku | json }},
-          {%- endif -%}
-          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
-          "price" : {{ variant.price | divided_by: 100.00 | json }},
-          "priceCurrency" : {{ cart.currency.iso_code | json }},
-          "url" : {{ request.origin | append: variant.url | json }}
-        }{% unless forloop.last %},{% endunless %}
-      {%- endfor -%}
-    ]
-  }
-</script>
-
 {% schema %}
 {
   "name": "t:sections.main-product.name",
@@ -1586,6 +1556,16 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "swatches",
+      "name": "Swatches",
+      "settings": []
+    },
+    {
+      "type": "add_ons",
+      "name": "Add Ons",
+      "settings": []
     },
     {
       "type": "pickup_avail",

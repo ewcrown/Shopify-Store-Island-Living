@@ -82,7 +82,7 @@
         "enable_image_fill": true,
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": true,
+        "show_rating": false,
         "show_quick_buy": false,
         "enable_quick_view": true,
         "enable_color_swatches": false,

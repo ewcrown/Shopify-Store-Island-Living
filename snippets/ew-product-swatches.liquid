@@ -1,0 +1,10 @@
+{% if product.metafields.custom.product_swatches != blank %}
+<fieldset class="js product-form__input variant-input-wrapper" data-option-index="option1" data-option-slug="title">
+  <legend class="form__label">
+    Color:
+  </legend>
+  {% for single in product.metafields.custom.product_swatches.value %}
+    <a class="ew-product-swatch" href="{{ single.url }}" style="background-image:url({{ single.featured_image | img_url:'master' }})"></a>
+  {% endfor %}
+</fieldset>
+{% endif %}

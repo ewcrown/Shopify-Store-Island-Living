@@ -1,0 +1,47 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ shop.url }}{{ page.url }}"
+  },
+  "headline": {{ page.title | json }},
+  "description": {{ page.content | strip_html | truncate: 200 | json }},
+  "author": {
+    "@type": "Organization",
+    "name": {{ shop.name | json }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ shop.brand.logo | image_url: width: 500 | prepend: "https:" | json }}
+    }
+  },
+  "datePublished": "{{ page.created_at | date: '%Y-%m-%d' }}",
+  "dateModified": "{{ page.updated_at | date: '%Y-%m-%d' }}"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ shop.url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Caring for Rattan Furniture",
+      "item": "{{ shop.url }}{{ page.url }}"
+    }
+  ]
+}
+</script>
