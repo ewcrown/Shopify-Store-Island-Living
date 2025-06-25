@@ -53,15 +53,12 @@
 
 /* wrap becomes a 2-row horiz-scroll grid */
 .product-addon-wrap {
-  scroll-padding-left: 1rem;
-  scroll-padding-right: 1rem;
-  display: flex;
-  gap: 1rem;
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
-  /* ✅ add this */
-  scroll-snap-type: x mandatory;
-  flex-wrap: nowrap;
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
 }
 
 /* each block becomes one “cell” in that grid */
@@ -72,14 +69,13 @@
   background: #fff;
   border: 1px solid #eee;
   border-radius: 4px;
-  padding: 4rem;
+  padding: 2rem 4rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
 .product-addon-block img {
-  height: 200px;
-  width: 100%;
-  object-fit: contain;
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* optional: hide scrollbar in WebKit browsers */

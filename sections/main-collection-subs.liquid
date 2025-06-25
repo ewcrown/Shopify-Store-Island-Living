@@ -1,4 +1,4 @@
-{%- if section.settings.menu != blank -%}
+{% comment %} {%- if section.settings.menu != blank -%} {% endcomment %}
   {%- style -%}
     #shopify-section-{{ section.id }} {
       --section-padding-top: {{ section.settings.padding_top }}px;
@@ -13,7 +13,8 @@
   <noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
 
   <div class="section--padding page-width">
-    {%- liquid
+    {% render 'sub-collections' %}
+    {% comment %} {%- liquid
       assign current_items = ''
     
       for link in section.settings.menu.links
@@ -45,9 +46,9 @@
           endfor
         endfor
       endfor
-    -%}
+    -%} {% endcomment %}
   </div>
-{%- endif -%}
+{% comment %} {%- endif -%} {% endcomment %}
 
 {% schema %}
 {
