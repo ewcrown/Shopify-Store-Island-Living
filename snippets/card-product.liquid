@@ -463,6 +463,7 @@
       {%- endif -%}
     </div>
   </div>
+  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: card_product %}
   <div class="card__badge">
     {%- if card_product.metafields.theme.label.value != blank -%}
       {%- capture badge_styles -%}

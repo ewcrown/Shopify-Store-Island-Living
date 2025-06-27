@@ -4,7 +4,16 @@
     Color:
   </legend>
   {% for single in product.metafields.custom.product_swatches.value %}
-    <a class="ew-product-swatch" href="{{ single.url }}" style="background-image:url({{ single.featured_image | img_url:'master' }})"></a>
+    {% assign isColor = single.metafields.custom.swatch_color_image.value %}
+    <a class="ew-product-swatch {% if single.handle == product.handle %}active{% endif %} " href="{{ single.url }}" style="
+      {%- if isColor contains '#' -%}
+        background-color:{{ isColor }};
+      {%- elsif isColor contains 'https' -%}
+        background-image:url({{isColor}})
+      {% else %}
+        background-image:url({{ single.featured_image | img_url:'master' }})
+      {%- endif -%}
+      "></a>
   {% endfor %}
 </fieldset>
 {% endif %}

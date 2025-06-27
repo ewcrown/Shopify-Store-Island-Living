@@ -3,6 +3,9 @@
 }
 
 
+.ew-product-swatch.active {
+  outline: 1px solid #000000;
+}
 .ew-product-swatch {
   display: block !important;
   width: 30px;
@@ -10,7 +13,7 @@
   border-radius: 40px;
   background-size: 100% 100%;
   outline-offset: 2px;
-  outline: 1px solid #05350c;
+  outline: 1px solid #f2f2f2;
   margin-right: 16px;
 }
 
@@ -63,14 +66,14 @@
 
 /* each block becomes one “cell” in that grid */
 .product-addon-block {
-  flex: 0 0 calc(25% - 0.5rem);
-  scroll-snap-align: start;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  padding: 2rem 4rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
 }
 .product-addon-block img {
     height: 150px;
@@ -112,4 +115,8 @@
 .product-addon-wrap-outer {
   overflow-x: auto;
   width: 100%;
+}
+
+.ew-product-accordion-dimensions .accordion__content{
+  max-height: fit-content !important;
 }

@@ -1,20 +1,20 @@
-{% if product.metafields.custom.add_ons != blank %}
+{% if product.metafields.custom.add_ons_variants != blank %}
   <div class="product-addon-wrap-outer">
 <fieldset class="js product-form__input variant-input-wrapper" data-option-index="option1" data-option-slug="title">
   <legend class="form__label">
     Add ons:
   </legend>
     <div class="product-addon-wrap">
-      {% for single in product.metafields.custom.add_ons.value %}
+      {% for single in product.metafields.custom.add_ons_variants.value %}
       <div class="product-addon-block">
-        {% if single.featured_image != blank %}
-        <img src="{{ single.featured_image | img_url:'master' }}"
-            alt="{{ single.title }}" class="img-responsive" />
-        {% endif %}
-        <h3 class="product__heading h4">{{ single.title }}</h3>
+        
+          <img src="{% if single.featured_image != blank %}{{ single.featured_image | img_url:'master' }}{% else %}{{ single.product.featured_image | img_url:'master' }}{% endif %}" alt="{{ single.title }}" class="img-responsive" />
+        <h3 class="product__heading h4">
+            {{ single.product.title }} - {{ single.title }}
+        </h3>
         <p>{{ single.price | money }}</p>
         <a href="javascript:void(0)" 
-          data-variant="{{ single.selected_or_first_available_variant.id }}" 
+          data-variant="{{ single.id }}" 
           data-add-option>Add</a>
       </div>
       {% endfor %}

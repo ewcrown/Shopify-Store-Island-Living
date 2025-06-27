@@ -849,7 +849,7 @@
                 or block.settings.page.content != blank
                 or block.settings.custom_liquid != blank
               -%}
-                <accordion-tab class="product__accordion accordion" {{ block.shopify_attributes }}>
+                <accordion-tab class="product__accordion accordion ew-product-accordion-{{ block.settings.heading | handle }}" {{ block.shopify_attributes }}>
                   <details
                     {% if block.settings.keep_open %}
                       open
@@ -1471,7 +1471,7 @@
                 <button
                   type="submit"
                   name="add"
-                  class="product-form__submit button button--small"
+                  class="product-form__submit button button--small hell"
                   {%- if product.selected_or_first_available_variant.available == false %}
                     disabled="disabled"
                   {% endif -%}
@@ -1547,6 +1547,78 @@
     assign seo_media = product.featured_media
   endif
 -%}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const productFormButton = document.querySelector('.product__info-wrapper .product-form button[type="submit"]');
+  const productForm = document.querySelector('.product__info-wrapper .product-form form');
+
+  async function openMiniCart() {
+    document.body.classList.add('mini-cart--opening');
+    setTimeout(() => {
+      document.body.classList.remove('mini-cart--opening');
+      document.body.classList.add('mini-cart--open');
+
+      const cartDrawer = document.querySelector('.cart-drawer-container');
+      if (cartDrawer) {
+        cartDrawer.classList.add('menu-opening');
+        cartDrawer.setAttribute('open', '');
+      }
+    }, 500);
+  }
+
+  async function renderMiniCartSection() {
+    try {
+      const res = await fetch('/?sections=mini-cart'); // Use your actual section ID
+      const data = await res.json();
+      const miniCartContainer = document.querySelector('.mini-cart');
+      if (miniCartContainer && data['mini-cart']) {
+        miniCartContainer.innerHTML = data['mini-cart'];
+        console.log('Mini-cart section updated');
+      }
+    } catch (err) {
+      console.error('Failed to render mini-cart section:', err);
+    }
+  }
+
+  // ⛔ Prevent native submission & use AJAX
+  productFormButton.addEventListener('click', async function (e) {
+    e.preventDefault();
+    const formData = new FormData(productForm);
+    const variantId = formData.get('id');
+    const quantity = formData.get('quantity') || 1;
+
+    try {
+      const res = await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          items: [{
+            id: Number(variantId),
+            quantity: Number(quantity)
+          }]
+        })
+      });
+
+      if (!res.ok) {
+        const errorData = await res.json();
+        alert(errorData?.description || 'Something went wrong.');
+        return;
+      }
+
+      await openMiniCart();
+      await renderMiniCartSection();
+    } catch (err) {
+      console.error('Unexpected error:', err);
+      alert('Failed to add to cart.');
+    }
+  });
+});
+</script>
+
 
 {% schema %}
 {

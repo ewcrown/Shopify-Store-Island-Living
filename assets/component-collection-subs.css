@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 990px) {
   .collection .collection-list.grid--5-col-desktop > .grid__item {
-    max-width: calc(20% - var(--grid-horizontal-spacing) * 4 / 5);
+    max-width: calc(15% - var(--grid-horizontal-spacing) * 4 / 5);
   }
 
   .collection .collection-list.grid--4-col-desktop > .grid__item {
